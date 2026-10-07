@@ -1,0 +1,1248 @@
+{
+  "total": 17622,
+  "classes": [
+    "microseismic",
+    "blasting",
+    "small_landslide",
+    "mechanical_mining",
+    "transport_vehicles"
+  ],
+  "phases": [
+    "Training",
+    "Validation",
+    "Test"
+  ],
+  "summaries": [
+    {
+      "class": "microseismic",
+      "subset": "Training",
+      "files": 979,
+      "fraction": 0.6987865810135617,
+      "first_start": "2025-06-01T05:12:09.128000",
+      "last_start": "2025-07-07T22:04:57.480000"
+    },
+    {
+      "class": "microseismic",
+      "subset": "Validation",
+      "files": 258,
+      "fraction": 0.1841541755888651,
+      "first_start": "2025-07-08T00:15:57.012000",
+      "last_start": "2025-07-16T22:24:28.264000"
+    },
+    {
+      "class": "microseismic",
+      "subset": "Test",
+      "files": 164,
+      "fraction": 0.11705924339757316,
+      "first_start": "2025-07-17T00:05:16.396000",
+      "last_start": "2025-07-20T09:02:32.632000"
+    },
+    {
+      "class": "blasting",
+      "subset": "Training",
+      "files": 4141,
+      "fraction": 0.6359029484029484,
+      "first_start": "2025-06-01T05:12:09.544000",
+      "last_start": "2025-07-12T22:43:02.296000"
+    },
+    {
+      "class": "blasting",
+      "subset": "Validation",
+      "files": 1596,
+      "fraction": 0.24508599508599507,
+      "first_start": "2025-07-13T00:19:25.100000",
+      "last_start": "2025-07-16T23:36:50.476000"
+    },
+    {
+      "class": "blasting",
+      "subset": "Test",
+      "files": 775,
+      "fraction": 0.1190110565110565,
+      "first_start": "2025-07-17T00:44:38.780000",
+      "last_start": "2025-07-20T08:37:34.244000"
+    },
+    {
+      "class": "small_landslide",
+      "subset": "Training",
+      "files": 100,
+      "fraction": 0.6756756756756757,
+      "first_start": "2025-06-02T21:58:36.508000",
+      "last_start": "2025-06-09T22:19:37.496000"
+    },
+    {
+      "class": "small_landslide",
+      "subset": "Validation",
+      "files": 27,
+      "fraction": 0.18243243243243243,
+      "first_start": "2025-06-11T05:49:44.464000",
+      "last_start": "2025-07-15T07:44:26.152000"
+    },
+    {
+      "class": "small_landslide",
+      "subset": "Test",
+      "files": 21,
+      "fraction": 0.14189189189189189,
+      "first_start": "2025-07-16T07:38:06.016000",
+      "last_start": "2025-07-20T08:32:43.448000"
+    },
+    {
+      "class": "mechanical_mining",
+      "subset": "Training",
+      "files": 4950,
+      "fraction": 0.6436931079323797,
+      "first_start": "2025-06-01T06:06:34.800000",
+      "last_start": "2025-07-10T23:59:01.416000"
+    },
+    {
+      "class": "mechanical_mining",
+      "subset": "Validation",
+      "files": 1893,
+      "fraction": 0.24616384915474643,
+      "first_start": "2025-07-11T00:01:03.920000",
+      "last_start": "2025-07-15T23:56:09.340000"
+    },
+    {
+      "class": "mechanical_mining",
+      "subset": "Test",
+      "files": 847,
+      "fraction": 0.11014304291287386,
+      "first_start": "2025-07-16T00:29:36.696000",
+      "last_start": "2025-07-20T09:07:54.116000"
+    },
+    {
+      "class": "transport_vehicles",
+      "subset": "Training",
+      "files": 1267,
+      "fraction": 0.6771779796900054,
+      "first_start": "2025-06-01T02:36:15.272000",
+      "last_start": "2025-06-30T18:56:41.752000"
+    },
+    {
+      "class": "transport_vehicles",
+      "subset": "Validation",
+      "files": 391,
+      "fraction": 0.2089791555318012,
+      "first_start": "2025-07-01T00:35:49.200000",
+      "last_start": "2025-07-08T23:54:28.364000"
+    },
+    {
+      "class": "transport_vehicles",
+      "subset": "Test",
+      "files": 213,
+      "fraction": 0.11384286477819348,
+      "first_start": "2025-07-09T01:05:14.192000",
+      "last_start": "2025-07-20T08:16:57.848000"
+    }
+  ],
+  "daily": {
+    "microseismic": {
+      "2025-06-01": {
+        "total": 38,
+        "subset": "Training"
+      },
+      "2025-06-02": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-03": {
+        "total": 64,
+        "subset": "Training"
+      },
+      "2025-06-04": {
+        "total": 1,
+        "subset": "Training"
+      },
+      "2025-06-05": {
+        "total": 39,
+        "subset": "Training"
+      },
+      "2025-06-06": {
+        "total": 76,
+        "subset": "Training"
+      },
+      "2025-06-07": {
+        "total": 25,
+        "subset": "Training"
+      },
+      "2025-06-08": {
+        "total": 12,
+        "subset": "Training"
+      },
+      "2025-06-09": {
+        "total": 15,
+        "subset": "Training"
+      },
+      "2025-06-10": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-11": {
+        "total": 30,
+        "subset": "Training"
+      },
+      "2025-06-12": {
+        "total": 21,
+        "subset": "Training"
+      },
+      "2025-06-13": {
+        "total": 18,
+        "subset": "Training"
+      },
+      "2025-06-14": {
+        "total": 7,
+        "subset": "Training"
+      },
+      "2025-06-15": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-16": {
+        "total": 35,
+        "subset": "Training"
+      },
+      "2025-06-17": {
+        "total": 29,
+        "subset": "Training"
+      },
+      "2025-06-18": {
+        "total": 22,
+        "subset": "Training"
+      },
+      "2025-06-19": {
+        "total": 101,
+        "subset": "Training"
+      },
+      "2025-06-20": {
+        "total": 62,
+        "subset": "Training"
+      },
+      "2025-06-21": {
+        "total": 29,
+        "subset": "Training"
+      },
+      "2025-06-22": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-23": {
+        "total": 7,
+        "subset": "Training"
+      },
+      "2025-06-24": {
+        "total": 8,
+        "subset": "Training"
+      },
+      "2025-06-25": {
+        "total": 2,
+        "subset": "Training"
+      },
+      "2025-06-26": {
+        "total": 10,
+        "subset": "Training"
+      },
+      "2025-06-27": {
+        "total": 6,
+        "subset": "Training"
+      },
+      "2025-06-28": {
+        "total": 16,
+        "subset": "Training"
+      },
+      "2025-06-29": {
+        "total": 12,
+        "subset": "Training"
+      },
+      "2025-06-30": {
+        "total": 6,
+        "subset": "Training"
+      },
+      "2025-07-01": {
+        "total": 13,
+        "subset": "Training"
+      },
+      "2025-07-02": {
+        "total": 36,
+        "subset": "Training"
+      },
+      "2025-07-03": {
+        "total": 27,
+        "subset": "Training"
+      },
+      "2025-07-04": {
+        "total": 10,
+        "subset": "Training"
+      },
+      "2025-07-05": {
+        "total": 27,
+        "subset": "Training"
+      },
+      "2025-07-06": {
+        "total": 127,
+        "subset": "Training"
+      },
+      "2025-07-07": {
+        "total": 48,
+        "subset": "Training"
+      },
+      "2025-07-08": {
+        "total": 33,
+        "subset": "Validation"
+      },
+      "2025-07-09": {
+        "total": 15,
+        "subset": "Validation"
+      },
+      "2025-07-10": {
+        "total": 19,
+        "subset": "Validation"
+      },
+      "2025-07-11": {
+        "total": 8,
+        "subset": "Validation"
+      },
+      "2025-07-12": {
+        "total": 18,
+        "subset": "Validation"
+      },
+      "2025-07-13": {
+        "total": 58,
+        "subset": "Validation"
+      },
+      "2025-07-14": {
+        "total": 32,
+        "subset": "Validation"
+      },
+      "2025-07-15": {
+        "total": 24,
+        "subset": "Validation"
+      },
+      "2025-07-16": {
+        "total": 51,
+        "subset": "Validation"
+      },
+      "2025-07-17": {
+        "total": 44,
+        "subset": "Test"
+      },
+      "2025-07-18": {
+        "total": 25,
+        "subset": "Test"
+      },
+      "2025-07-19": {
+        "total": 52,
+        "subset": "Test"
+      },
+      "2025-07-20": {
+        "total": 43,
+        "subset": "Test"
+      }
+    },
+    "blasting": {
+      "2025-06-01": {
+        "total": 2,
+        "subset": "Training"
+      },
+      "2025-06-02": {
+        "total": 97,
+        "subset": "Training"
+      },
+      "2025-06-03": {
+        "total": 119,
+        "subset": "Training"
+      },
+      "2025-06-04": {
+        "total": 125,
+        "subset": "Training"
+      },
+      "2025-06-05": {
+        "total": 41,
+        "subset": "Training"
+      },
+      "2025-06-06": {
+        "total": 63,
+        "subset": "Training"
+      },
+      "2025-06-07": {
+        "total": 52,
+        "subset": "Training"
+      },
+      "2025-06-08": {
+        "total": 90,
+        "subset": "Training"
+      },
+      "2025-06-09": {
+        "total": 71,
+        "subset": "Training"
+      },
+      "2025-06-10": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-11": {
+        "total": 38,
+        "subset": "Training"
+      },
+      "2025-06-12": {
+        "total": 8,
+        "subset": "Training"
+      },
+      "2025-06-13": {
+        "total": 13,
+        "subset": "Training"
+      },
+      "2025-06-14": {
+        "total": 12,
+        "subset": "Training"
+      },
+      "2025-06-15": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-16": {
+        "total": 36,
+        "subset": "Training"
+      },
+      "2025-06-17": {
+        "total": 18,
+        "subset": "Training"
+      },
+      "2025-06-18": {
+        "total": 31,
+        "subset": "Training"
+      },
+      "2025-06-19": {
+        "total": 157,
+        "subset": "Training"
+      },
+      "2025-06-20": {
+        "total": 91,
+        "subset": "Training"
+      },
+      "2025-06-21": {
+        "total": 9,
+        "subset": "Training"
+      },
+      "2025-06-22": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-23": {
+        "total": 6,
+        "subset": "Training"
+      },
+      "2025-06-24": {
+        "total": 4,
+        "subset": "Training"
+      },
+      "2025-06-25": {
+        "total": 9,
+        "subset": "Training"
+      },
+      "2025-06-26": {
+        "total": 4,
+        "subset": "Training"
+      },
+      "2025-06-27": {
+        "total": 2,
+        "subset": "Training"
+      },
+      "2025-06-28": {
+        "total": 8,
+        "subset": "Training"
+      },
+      "2025-06-29": {
+        "total": 7,
+        "subset": "Training"
+      },
+      "2025-06-30": {
+        "total": 8,
+        "subset": "Training"
+      },
+      "2025-07-01": {
+        "total": 68,
+        "subset": "Training"
+      },
+      "2025-07-02": {
+        "total": 67,
+        "subset": "Training"
+      },
+      "2025-07-03": {
+        "total": 66,
+        "subset": "Training"
+      },
+      "2025-07-04": {
+        "total": 62,
+        "subset": "Training"
+      },
+      "2025-07-05": {
+        "total": 102,
+        "subset": "Training"
+      },
+      "2025-07-06": {
+        "total": 1104,
+        "subset": "Training"
+      },
+      "2025-07-07": {
+        "total": 282,
+        "subset": "Training"
+      },
+      "2025-07-08": {
+        "total": 280,
+        "subset": "Training"
+      },
+      "2025-07-09": {
+        "total": 150,
+        "subset": "Training"
+      },
+      "2025-07-10": {
+        "total": 188,
+        "subset": "Training"
+      },
+      "2025-07-11": {
+        "total": 287,
+        "subset": "Training"
+      },
+      "2025-07-12": {
+        "total": 364,
+        "subset": "Training"
+      },
+      "2025-07-13": {
+        "total": 494,
+        "subset": "Validation"
+      },
+      "2025-07-14": {
+        "total": 241,
+        "subset": "Validation"
+      },
+      "2025-07-15": {
+        "total": 277,
+        "subset": "Validation"
+      },
+      "2025-07-16": {
+        "total": 584,
+        "subset": "Validation"
+      },
+      "2025-07-17": {
+        "total": 157,
+        "subset": "Test"
+      },
+      "2025-07-18": {
+        "total": 303,
+        "subset": "Test"
+      },
+      "2025-07-19": {
+        "total": 158,
+        "subset": "Test"
+      },
+      "2025-07-20": {
+        "total": 157,
+        "subset": "Test"
+      }
+    },
+    "small_landslide": {
+      "2025-06-01": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-02": {
+        "total": 3,
+        "subset": "Training"
+      },
+      "2025-06-03": {
+        "total": 22,
+        "subset": "Training"
+      },
+      "2025-06-04": {
+        "total": 3,
+        "subset": "Training"
+      },
+      "2025-06-05": {
+        "total": 5,
+        "subset": "Training"
+      },
+      "2025-06-06": {
+        "total": 9,
+        "subset": "Training"
+      },
+      "2025-06-07": {
+        "total": 7,
+        "subset": "Training"
+      },
+      "2025-06-08": {
+        "total": 1,
+        "subset": "Training"
+      },
+      "2025-06-09": {
+        "total": 50,
+        "subset": "Training"
+      },
+      "2025-06-10": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-11": {
+        "total": 9,
+        "subset": "Validation"
+      },
+      "2025-06-12": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-13": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-14": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-15": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-16": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-17": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-18": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-19": {
+        "total": 1,
+        "subset": "Validation"
+      },
+      "2025-06-20": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-21": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-22": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-23": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-24": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-25": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-26": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-27": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-28": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-29": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-06-30": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-01": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-02": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-03": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-04": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-05": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-06": {
+        "total": 3,
+        "subset": "Validation"
+      },
+      "2025-07-07": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-08": {
+        "total": 2,
+        "subset": "Validation"
+      },
+      "2025-07-09": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-10": {
+        "total": 1,
+        "subset": "Validation"
+      },
+      "2025-07-11": {
+        "total": 3,
+        "subset": "Validation"
+      },
+      "2025-07-12": {
+        "total": 0,
+        "subset": "Validation"
+      },
+      "2025-07-13": {
+        "total": 3,
+        "subset": "Validation"
+      },
+      "2025-07-14": {
+        "total": 3,
+        "subset": "Validation"
+      },
+      "2025-07-15": {
+        "total": 2,
+        "subset": "Validation"
+      },
+      "2025-07-16": {
+        "total": 7,
+        "subset": "Test"
+      },
+      "2025-07-17": {
+        "total": 4,
+        "subset": "Test"
+      },
+      "2025-07-18": {
+        "total": 3,
+        "subset": "Test"
+      },
+      "2025-07-19": {
+        "total": 6,
+        "subset": "Test"
+      },
+      "2025-07-20": {
+        "total": 1,
+        "subset": "Test"
+      }
+    },
+    "mechanical_mining": {
+      "2025-06-01": {
+        "total": 43,
+        "subset": "Training"
+      },
+      "2025-06-02": {
+        "total": 26,
+        "subset": "Training"
+      },
+      "2025-06-03": {
+        "total": 70,
+        "subset": "Training"
+      },
+      "2025-06-04": {
+        "total": 50,
+        "subset": "Training"
+      },
+      "2025-06-05": {
+        "total": 122,
+        "subset": "Training"
+      },
+      "2025-06-06": {
+        "total": 264,
+        "subset": "Training"
+      },
+      "2025-06-07": {
+        "total": 25,
+        "subset": "Training"
+      },
+      "2025-06-08": {
+        "total": 11,
+        "subset": "Training"
+      },
+      "2025-06-09": {
+        "total": 201,
+        "subset": "Training"
+      },
+      "2025-06-10": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-11": {
+        "total": 18,
+        "subset": "Training"
+      },
+      "2025-06-12": {
+        "total": 11,
+        "subset": "Training"
+      },
+      "2025-06-13": {
+        "total": 18,
+        "subset": "Training"
+      },
+      "2025-06-14": {
+        "total": 29,
+        "subset": "Training"
+      },
+      "2025-06-15": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-16": {
+        "total": 15,
+        "subset": "Training"
+      },
+      "2025-06-17": {
+        "total": 27,
+        "subset": "Training"
+      },
+      "2025-06-18": {
+        "total": 17,
+        "subset": "Training"
+      },
+      "2025-06-19": {
+        "total": 86,
+        "subset": "Training"
+      },
+      "2025-06-20": {
+        "total": 126,
+        "subset": "Training"
+      },
+      "2025-06-21": {
+        "total": 22,
+        "subset": "Training"
+      },
+      "2025-06-22": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-23": {
+        "total": 5,
+        "subset": "Training"
+      },
+      "2025-06-24": {
+        "total": 11,
+        "subset": "Training"
+      },
+      "2025-06-25": {
+        "total": 3,
+        "subset": "Training"
+      },
+      "2025-06-26": {
+        "total": 2,
+        "subset": "Training"
+      },
+      "2025-06-27": {
+        "total": 6,
+        "subset": "Training"
+      },
+      "2025-06-28": {
+        "total": 11,
+        "subset": "Training"
+      },
+      "2025-06-29": {
+        "total": 10,
+        "subset": "Training"
+      },
+      "2025-06-30": {
+        "total": 3,
+        "subset": "Training"
+      },
+      "2025-07-01": {
+        "total": 56,
+        "subset": "Training"
+      },
+      "2025-07-02": {
+        "total": 68,
+        "subset": "Training"
+      },
+      "2025-07-03": {
+        "total": 117,
+        "subset": "Training"
+      },
+      "2025-07-04": {
+        "total": 58,
+        "subset": "Training"
+      },
+      "2025-07-05": {
+        "total": 95,
+        "subset": "Training"
+      },
+      "2025-07-06": {
+        "total": 949,
+        "subset": "Training"
+      },
+      "2025-07-07": {
+        "total": 716,
+        "subset": "Training"
+      },
+      "2025-07-08": {
+        "total": 591,
+        "subset": "Training"
+      },
+      "2025-07-09": {
+        "total": 561,
+        "subset": "Training"
+      },
+      "2025-07-10": {
+        "total": 507,
+        "subset": "Training"
+      },
+      "2025-07-11": {
+        "total": 470,
+        "subset": "Validation"
+      },
+      "2025-07-12": {
+        "total": 780,
+        "subset": "Validation"
+      },
+      "2025-07-13": {
+        "total": 342,
+        "subset": "Validation"
+      },
+      "2025-07-14": {
+        "total": 170,
+        "subset": "Validation"
+      },
+      "2025-07-15": {
+        "total": 131,
+        "subset": "Validation"
+      },
+      "2025-07-16": {
+        "total": 168,
+        "subset": "Test"
+      },
+      "2025-07-17": {
+        "total": 254,
+        "subset": "Test"
+      },
+      "2025-07-18": {
+        "total": 141,
+        "subset": "Test"
+      },
+      "2025-07-19": {
+        "total": 92,
+        "subset": "Test"
+      },
+      "2025-07-20": {
+        "total": 192,
+        "subset": "Test"
+      }
+    },
+    "transport_vehicles": {
+      "2025-06-01": {
+        "total": 81,
+        "subset": "Training"
+      },
+      "2025-06-02": {
+        "total": 84,
+        "subset": "Training"
+      },
+      "2025-06-03": {
+        "total": 110,
+        "subset": "Training"
+      },
+      "2025-06-04": {
+        "total": 135,
+        "subset": "Training"
+      },
+      "2025-06-05": {
+        "total": 89,
+        "subset": "Training"
+      },
+      "2025-06-06": {
+        "total": 87,
+        "subset": "Training"
+      },
+      "2025-06-07": {
+        "total": 63,
+        "subset": "Training"
+      },
+      "2025-06-08": {
+        "total": 82,
+        "subset": "Training"
+      },
+      "2025-06-09": {
+        "total": 79,
+        "subset": "Training"
+      },
+      "2025-06-10": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-11": {
+        "total": 133,
+        "subset": "Training"
+      },
+      "2025-06-12": {
+        "total": 54,
+        "subset": "Training"
+      },
+      "2025-06-13": {
+        "total": 21,
+        "subset": "Training"
+      },
+      "2025-06-14": {
+        "total": 15,
+        "subset": "Training"
+      },
+      "2025-06-15": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-16": {
+        "total": 13,
+        "subset": "Training"
+      },
+      "2025-06-17": {
+        "total": 10,
+        "subset": "Training"
+      },
+      "2025-06-18": {
+        "total": 17,
+        "subset": "Training"
+      },
+      "2025-06-19": {
+        "total": 50,
+        "subset": "Training"
+      },
+      "2025-06-20": {
+        "total": 45,
+        "subset": "Training"
+      },
+      "2025-06-21": {
+        "total": 14,
+        "subset": "Training"
+      },
+      "2025-06-22": {
+        "total": 0,
+        "subset": "Training"
+      },
+      "2025-06-23": {
+        "total": 3,
+        "subset": "Training"
+      },
+      "2025-06-24": {
+        "total": 13,
+        "subset": "Training"
+      },
+      "2025-06-25": {
+        "total": 20,
+        "subset": "Training"
+      },
+      "2025-06-26": {
+        "total": 2,
+        "subset": "Training"
+      },
+      "2025-06-27": {
+        "total": 5,
+        "subset": "Training"
+      },
+      "2025-06-28": {
+        "total": 6,
+        "subset": "Training"
+      },
+      "2025-06-29": {
+        "total": 20,
+        "subset": "Training"
+      },
+      "2025-06-30": {
+        "total": 16,
+        "subset": "Training"
+      },
+      "2025-07-01": {
+        "total": 52,
+        "subset": "Validation"
+      },
+      "2025-07-02": {
+        "total": 18,
+        "subset": "Validation"
+      },
+      "2025-07-03": {
+        "total": 22,
+        "subset": "Validation"
+      },
+      "2025-07-04": {
+        "total": 33,
+        "subset": "Validation"
+      },
+      "2025-07-05": {
+        "total": 21,
+        "subset": "Validation"
+      },
+      "2025-07-06": {
+        "total": 30,
+        "subset": "Validation"
+      },
+      "2025-07-07": {
+        "total": 110,
+        "subset": "Validation"
+      },
+      "2025-07-08": {
+        "total": 105,
+        "subset": "Validation"
+      },
+      "2025-07-09": {
+        "total": 38,
+        "subset": "Test"
+      },
+      "2025-07-10": {
+        "total": 39,
+        "subset": "Test"
+      },
+      "2025-07-11": {
+        "total": 40,
+        "subset": "Test"
+      },
+      "2025-07-12": {
+        "total": 11,
+        "subset": "Test"
+      },
+      "2025-07-13": {
+        "total": 21,
+        "subset": "Test"
+      },
+      "2025-07-14": {
+        "total": 23,
+        "subset": "Test"
+      },
+      "2025-07-15": {
+        "total": 4,
+        "subset": "Test"
+      },
+      "2025-07-16": {
+        "total": 11,
+        "subset": "Test"
+      },
+      "2025-07-17": {
+        "total": 5,
+        "subset": "Test"
+      },
+      "2025-07-18": {
+        "total": 7,
+        "subset": "Test"
+      },
+      "2025-07-19": {
+        "total": 7,
+        "subset": "Test"
+      },
+      "2025-07-20": {
+        "total": 7,
+        "subset": "Test"
+      }
+    }
+  },
+  "boundaries": [
+    {
+      "class": "microseismic",
+      "date": "2025-07-08",
+      "Training": 0,
+      "Validation": 33,
+      "Test": 0
+    },
+    {
+      "class": "microseismic",
+      "date": "2025-07-17",
+      "Training": 0,
+      "Validation": 0,
+      "Test": 44
+    },
+    {
+      "class": "blasting",
+      "date": "2025-07-13",
+      "Training": 0,
+      "Validation": 494,
+      "Test": 0
+    },
+    {
+      "class": "blasting",
+      "date": "2025-07-17",
+      "Training": 0,
+      "Validation": 0,
+      "Test": 157
+    },
+    {
+      "class": "small_landslide",
+      "date": "2025-06-11",
+      "Training": 0,
+      "Validation": 9,
+      "Test": 0
+    },
+    {
+      "class": "small_landslide",
+      "date": "2025-07-16",
+      "Training": 0,
+      "Validation": 0,
+      "Test": 7
+    },
+    {
+      "class": "mechanical_mining",
+      "date": "2025-07-11",
+      "Training": 0,
+      "Validation": 470,
+      "Test": 0
+    },
+    {
+      "class": "mechanical_mining",
+      "date": "2025-07-16",
+      "Training": 0,
+      "Validation": 0,
+      "Test": 168
+    },
+    {
+      "class": "transport_vehicles",
+      "date": "2025-07-01",
+      "Training": 0,
+      "Validation": 52,
+      "Test": 0
+    },
+    {
+      "class": "transport_vehicles",
+      "date": "2025-07-09",
+      "Training": 0,
+      "Validation": 0,
+      "Test": 38
+    }
+  ],
+  "totals": {
+    "Training": 11437,
+    "Validation": 4165,
+    "Test": 2020
+  },
+  "date_intervals": {
+    "microseismic": {
+      "validation_start": "2025-07-08",
+      "test_start": "2025-07-17"
+    },
+    "blasting": {
+      "validation_start": "2025-07-13",
+      "test_start": "2025-07-17"
+    },
+    "small_landslide": {
+      "validation_start": "2025-06-11",
+      "test_start": "2025-07-16"
+    },
+    "mechanical_mining": {
+      "validation_start": "2025-07-11",
+      "test_start": "2025-07-16"
+    },
+    "transport_vehicles": {
+      "validation_start": "2025-07-01",
+      "test_start": "2025-07-09"
+    }
+  }
+}

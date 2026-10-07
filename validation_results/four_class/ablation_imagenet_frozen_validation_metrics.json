@@ -1,0 +1,20 @@
+{
+  "model": "RandomForest",
+  "overall_accuracy": 0.7325330132052821,
+  "macro_precision": 0.5996577170650179,
+  "macro_recall": 0.5937142856431776,
+  "macro_f1": 0.5908943500147301,
+  "balanced_accuracy": 0.5937142856431776,
+  "precision_natural_slope_events": 0.0,
+  "recall_natural_slope_events": 0.0,
+  "f1_natural_slope_events": 0.0,
+  "precision_blasting": 0.791885800150263,
+  "recall_blasting": 0.6604010025062657,
+  "f1_blasting": 0.7201913221728733,
+  "precision_mechanical_mining": 0.6728370221327968,
+  "recall_mechanical_mining": 0.8832540940306391,
+  "f1_mechanical_mining": 0.7638190954773869,
+  "precision_transport_vehicles": 0.9339080459770115,
+  "recall_transport_vehicles": 0.8312020460358056,
+  "f1_transport_vehicles": 0.8795669824086604
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "event_detection",
+  "script": "02_event_detection/detect_events.py",
+  "preprocessing": "parameters/01_preprocessing.json",
+  "sta_window_s": 0.5,
+  "lta_window_s": 3.0,
+  "trigger_on": 3.5,
+  "trigger_off": 1.5,
+  "minimum_distinct_stations": 3,
+  "extraction_window_s": [
+    -2.0,
+    8.0
+  ],
+  "extraction_reference": "trigger onset (event_start)"
+}

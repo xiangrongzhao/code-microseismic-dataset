@@ -1,0 +1,126 @@
+{
+  "schema": "4class",
+  "fit_subset": "train",
+  "phases": {
+    "test": {
+      "records": 2020,
+      "verified_models": [
+        {
+          "model": "CNN",
+          "overall_accuracy": 0.6178217821782178,
+          "macro_precision": 0.6114338764838727,
+          "macro_recall": 0.6067486361435392,
+          "macro_f1": 0.5591792230317196,
+          "balanced_accuracy": 0.6067486361435392
+        },
+        {
+          "model": "RandomForest",
+          "overall_accuracy": 0.7173267326732673,
+          "macro_precision": 0.6215782235605978,
+          "macro_recall": 0.5788997792925759,
+          "macro_f1": 0.5773806865106667,
+          "balanced_accuracy": 0.5788997792925759
+        },
+        {
+          "model": "LogisticRegression",
+          "overall_accuracy": 0.6257425742574257,
+          "macro_precision": 0.5675889072545045,
+          "macro_recall": 0.6068142554689991,
+          "macro_f1": 0.5520885016954264,
+          "balanced_accuracy": 0.6068142554689991
+        },
+        {
+          "model": "MLP",
+          "overall_accuracy": 0.7004950495049505,
+          "macro_precision": 0.5923189276489045,
+          "macro_recall": 0.5943673349030418,
+          "macro_f1": 0.5714791524949411,
+          "balanced_accuracy": 0.5943673349030418
+        },
+        {
+          "model": "XGBoost",
+          "overall_accuracy": 0.7039603960396039,
+          "macro_precision": 0.6019566219657949,
+          "macro_recall": 0.5718518222875746,
+          "macro_f1": 0.567102204396194,
+          "balanced_accuracy": 0.5718518222875746
+        },
+        {
+          "model": "Ensemble",
+          "overall_accuracy": 0.6881188118811881,
+          "macro_precision": 0.6206211159330779,
+          "macro_recall": 0.604659616185782,
+          "macro_f1": 0.5935469287671759,
+          "balanced_accuracy": 0.604659616185782
+        }
+      ]
+    },
+    "validation": {
+      "records": 4165,
+      "verified_models": [
+        {
+          "model": "CNN",
+          "overall_accuracy": 0.6151260504201681,
+          "macro_precision": 0.5898970098551058,
+          "macro_recall": 0.6130708853513155,
+          "macro_f1": 0.5633248060746427,
+          "balanced_accuracy": 0.6130708853513155
+        },
+        {
+          "model": "RandomForest",
+          "overall_accuracy": 0.720048019207683,
+          "macro_precision": 0.6446361866387077,
+          "macro_recall": 0.6005460232956815,
+          "macro_f1": 0.6041931223071074,
+          "balanced_accuracy": 0.6005460232956815
+        },
+        {
+          "model": "LogisticRegression",
+          "overall_accuracy": 0.5951980792316927,
+          "macro_precision": 0.5193287895525733,
+          "macro_recall": 0.5851154640251514,
+          "macro_f1": 0.5173855565441067,
+          "balanced_accuracy": 0.5851154640251514
+        },
+        {
+          "model": "MLP",
+          "overall_accuracy": 0.6895558223289315,
+          "macro_precision": 0.5705092441845535,
+          "macro_recall": 0.593912054009156,
+          "macro_f1": 0.567847411521647,
+          "balanced_accuracy": 0.593912054009156
+        },
+        {
+          "model": "XGBoost",
+          "overall_accuracy": 0.712124849939976,
+          "macro_precision": 0.6076753806348577,
+          "macro_recall": 0.5850053551758295,
+          "macro_f1": 0.5814610318478198,
+          "balanced_accuracy": 0.5850053551758295
+        },
+        {
+          "model": "Ensemble",
+          "overall_accuracy": 0.6895558223289315,
+          "macro_precision": 0.6099586946203202,
+          "macro_recall": 0.617622005791876,
+          "macro_f1": 0.6048140218455278,
+          "balanced_accuracy": 0.617622005791876
+        }
+      ]
+    }
+  },
+  "reloaded_models": [
+    "RandomForest",
+    "LogisticRegression",
+    "MLP",
+    "XGBoost",
+    "CNN",
+    "ablation_imagenet_frozen",
+    "ablation_finetuned"
+  ],
+  "metrics_and_confusion_matrices_match": true,
+  "ensemble_members": [
+    "CNN",
+    "RandomForest"
+  ]
+}

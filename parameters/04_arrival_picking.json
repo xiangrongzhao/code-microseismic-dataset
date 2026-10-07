@@ -1,0 +1,15 @@
+{
+  "stage": "arrival_picking",
+  "script": "04_arrival_picking/pick_arrivals.py",
+  "component": "vertical",
+  "picker": "obspy ar_pick, S picking disabled",
+  "bandpass_hz": [
+    1.0,
+    20.0
+  ],
+  "filter_corners": 4,
+  "zero_phase": true,
+  "lta_p_s": 1.0,
+  "sta_p_s": 0.1,
+  "minimum_pick_s": 0.05
+}

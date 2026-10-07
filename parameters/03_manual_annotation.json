@@ -1,0 +1,12 @@
+{
+  "stage": "manual_annotation",
+  "script": "03_manual_annotation/review_candidates.py",
+  "allowed_labels": [
+    "microseismic",
+    "blasting",
+    "small_landslide",
+    "mechanical_mining",
+    "transport_vehicles",
+    "reject"
+  ]
+}

@@ -1,4 +1,4 @@
-# microseismic-dataset
+# code-microseismic-dataset
 
 
 ## Features
@@ -45,7 +45,7 @@ A CUDA-capable GPU can speed up CNN training. The first CNN run downloads torchv
 
 ### 1. Download and extract the dataset
 
-Download the accompanying data using the [Figshare dataset share link].
+Download the dataset from Figshare: https://doi.org/10.6084/m9.figshare.34074750
 
 ```text
 project/
@@ -64,7 +64,11 @@ The classified waveform directory contains 17,622 `.npy` files: 1,401 microseism
 
 Run all commands from `code-dataset`. Replace `../dataset` with your extracted dataset path and `../experiment-results` with your output path. Paths are supplied through command-line arguments, so no configuration-file edit is required. Keep generated files outside the code and source-data directories.
 
-The released NumPy dictionaries use pickle. Use `--trust-source` when reading the trusted dataset download.
+The original `.npy` dictionaries use pickle. Use `--trust-source` when reading the trusted dataset download with the existing workflows. The `09_pickle_free_records` folder contains all 17,622 classified records as pickle-free `.npz` files, `records_index.csv` with SHA-256 hashes of both formats, the indexed loader `load_event.py`, the conversion script `build_npz_release.py`, the conversion report `conversion_report.json` and `README.txt`. It serves the verification of the dataset in the same way as this code package and is not part of the dataset release; because of its data volume it is not stored in the GitHub repository but deposited separately on Figshare: https://doi.org/10.6084/m9.figshare.34128987. Extract it inside `code-dataset` to run the command below. It works independently of the original NPY files for NPZ loading. See `09_pickle_free_records/README.txt` for loading and full-release verification.
+
+```shell
+python 09_pickle_free_records/load_event.py --verify-all
+```
 
 ### 3. Run the workflows
 
@@ -95,9 +99,19 @@ python 05_velocity_localization/make_inputs1.py --out-dir ../experiment-results/
 python 05_velocity_localization/run_localization_example.py --inputs ../experiment-results/localization_inputs --out-dir ../experiment-results/localization
 ```
 
-The localization example includes its waveforms, station table, and velocity model. See [the localization guide](05_velocity_localization/README.txt) for expected values and verification.
+The localization example includes its waveforms, station table, velocity model (`XJD2_updated.txt`) and the pick set `05_velocity_localization/code_inputs1` (`stas_xyz.npy`, `tobs_p.npy`, `pick_report.csv`, `input_provenance.json`), which `make_inputs1.py` rebuilds from the bundled waveforms. To reproduce the reported solutions directly from the bundled picks:
+
+```shell
+python 05_velocity_localization/run_localization_example.py --inputs 05_velocity_localization/code_inputs1 --out-dir ../experiment-results/localization
+```
+
+See [the localization guide](05_velocity_localization/README.txt) for expected values and verification.
+
+Parameter files for every processing stage are in `parameters/` (one JSON file per stage, from raw-data screening to classification).
 
 ## Validation
+
+The `validation_results` directory contains the split manifest, model checkpoints, predictions and metric files that reproduce the tables and figures of the Technical Validation section, together with the localization-example results. See `validation_results/README.txt` for its contents and for the regenerable intermediate files that are not included.
 
 Check the event files, recording coverage, and saved results:
 
@@ -111,20 +125,24 @@ python 08_validation/validate_results.py --results ../experiment-results/four_cl
 ## Directory structure
 
 ```text
-microseismic-dataset/
+code-microseismic-dataset/
 |-- 01_preprocessing/           # Raw-waveform filtering and quality screening
 |-- 02_event_detection/         # STA/LTA detection and event-window extraction
 |-- 03_manual_annotation/       # Candidate review and annotation templates
 |-- 04_arrival_picking/         # General P-wave arrival picking
-|-- 05_velocity_localization/   # Velocity model and localization example
+|-- 05_velocity_localization/   # Velocity model, code_inputs1 and localization example
 |-- 06_data_loading/            # NumPy event loading and schema checks
 |-- 07_classification/          # Baseline training and evaluation
 |-- 08_validation/              # Integrity, coverage, metrics, and figures
+|-- parameters/                 # Parameter files for every processing stage
+|-- validation_results/         # Split manifest, checkpoints, predictions and metrics
 |-- README.md                  # Project guide
 |-- README.txt                 # Plain-text copy of this guide
-|-- LICENSE.txt                # CC BY 4.0 license notice
+|-- LICENSE                    # CC BY 4.0 license text
 `-- requirements.txt           # Python dependencies
 ```
+
+`09_pickle_free_records/` (17,622 NPZ records, SHA-256 index, indexed loader, conversion script and report) is deposited separately on Figshare (https://doi.org/10.6084/m9.figshare.34128987) and can be extracted into this directory.
 
 ## Outputs
 
@@ -140,6 +158,6 @@ Classification reports include accuracy, balanced accuracy, macro-F1, per-class 
 
 ## License and citation
 
-This project is released under [Creative Commons Attribution 4.0 International (CC BY 4.0)], matching the dataset license. You may copy, redistribute, modify, and use the original material commercially, provided you credit the authors, link to the license, and identify changes. See [LICENSE.txt](LICENSE.txt).
+This project is released under [Creative Commons Attribution 4.0 International (CC BY 4.0)], matching the dataset license. You may copy, redistribute, modify, and use the original material commercially, provided you credit the authors, link to the license, and identify changes. See [LICENSE](LICENSE).
 
 

@@ -1,0 +1,39 @@
+{
+  "schema": "4class",
+  "valid_records": 17622,
+  "scaler_fit_subset": "train",
+  "scaler_fit_records": 11437,
+  "silhouette": 0.013711200095713139,
+  "one_nn_leave_one_record_out": 0.6630348428101237,
+  "classes": [
+    "natural_slope_events",
+    "blasting",
+    "mechanical_mining",
+    "transport_vehicles"
+  ],
+  "per_class": {
+    "natural_slope_events": {
+      "count": 1549,
+      "silhouette": 0.04623745009303093,
+      "one_nn": 0.2543576500968367
+    },
+    "blasting": {
+      "count": 6512,
+      "silhouette": -0.017069268971681595,
+      "one_nn": 0.7136056511056511
+    },
+    "mechanical_mining": {
+      "count": 7690,
+      "silhouette": -0.01688869297504425,
+      "one_nn": 0.7163849154746424
+    },
+    "transport_vehicles": {
+      "count": 1871,
+      "silhouette": 0.21968258917331696,
+      "one_nn": 0.6060929983965794
+    }
+  },
+  "tsne_subsample": 4000,
+  "tsne_random_state": 42,
+  "interpretation": "descriptive label association in a trained representation; no independent-event or label-accuracy guarantee"
+}

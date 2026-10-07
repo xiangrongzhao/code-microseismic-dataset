@@ -1,0 +1,45 @@
+{
+  "schema": "5class",
+  "valid_records": 17622,
+  "scaler_fit_subset": "train",
+  "scaler_fit_records": 11437,
+  "silhouette": 0.009550126269459724,
+  "one_nn_leave_one_record_out": 0.6956077630234934,
+  "classes": [
+    "microseismic",
+    "blasting",
+    "small_landslide",
+    "mechanical_mining",
+    "transport_vehicles"
+  ],
+  "per_class": {
+    "microseismic": {
+      "count": 1401,
+      "silhouette": 0.06380949169397354,
+      "one_nn": 0.3204853675945753
+    },
+    "blasting": {
+      "count": 6512,
+      "silhouette": -0.02655169367790222,
+      "one_nn": 0.7461609336609336
+    },
+    "small_landslide": {
+      "count": 148,
+      "silhouette": 0.1235353872179985,
+      "one_nn": 0.581081081081081
+    },
+    "mechanical_mining": {
+      "count": 7690,
+      "silhouette": -0.005069616716355085,
+      "one_nn": 0.735110533159948
+    },
+    "transport_vehicles": {
+      "count": 1871,
+      "silhouette": 0.14564508199691772,
+      "one_nn": 0.6472474612506681
+    }
+  },
+  "tsne_subsample": 4000,
+  "tsne_random_state": 42,
+  "interpretation": "descriptive label association in a trained representation; no independent-event or label-accuracy guarantee"
+}

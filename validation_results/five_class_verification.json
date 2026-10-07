@@ -1,0 +1,129 @@
+{
+  "schema": "5class",
+  "fit_subset": "train",
+  "phases": {
+    "test": {
+      "records": 2020,
+      "verified_models": [
+        {
+          "model": "CNN",
+          "overall_accuracy": 0.65,
+          "macro_precision": 0.4840792986871471,
+          "macro_recall": 0.47538737852006874,
+          "macro_f1": 0.45794028296107553,
+          "balanced_accuracy": 0.47538737852006874
+        },
+        {
+          "model": "RandomForest",
+          "overall_accuracy": 0.7049504950495049,
+          "macro_precision": 0.5040827424958632,
+          "macro_recall": 0.4669824328862943,
+          "macro_f1": 0.46382818121700903,
+          "balanced_accuracy": 0.4669824328862943
+        },
+        {
+          "model": "LogisticRegression",
+          "overall_accuracy": 0.6118811881188119,
+          "macro_precision": 0.42955310182488676,
+          "macro_recall": 0.44926632500165803,
+          "macro_f1": 0.4153956254739713,
+          "balanced_accuracy": 0.44926632500165803
+        },
+        {
+          "model": "MLP",
+          "overall_accuracy": 0.6905940594059405,
+          "macro_precision": 0.4926950902138055,
+          "macro_recall": 0.46444459586313674,
+          "macro_f1": 0.4600979923673615,
+          "balanced_accuracy": 0.46444459586313674
+        },
+        {
+          "model": "XGBoost",
+          "overall_accuracy": 0.692079207920792,
+          "macro_precision": 0.48548587199624826,
+          "macro_recall": 0.4590324448048362,
+          "macro_f1": 0.4534995263203799,
+          "balanced_accuracy": 0.4590324448048362
+        },
+        {
+          "model": "Ensemble",
+          "overall_accuracy": 0.69009900990099,
+          "macro_precision": 0.49226477128503293,
+          "macro_recall": 0.4756585089624516,
+          "macro_f1": 0.4668686921620694,
+          "balanced_accuracy": 0.4756585089624516
+        }
+      ]
+    },
+    "validation": {
+      "records": 4165,
+      "verified_models": [
+        {
+          "model": "CNN",
+          "overall_accuracy": 0.6482593037214885,
+          "macro_precision": 0.4683875618940938,
+          "macro_recall": 0.4879155192191818,
+          "macro_f1": 0.4601300220386878,
+          "balanced_accuracy": 0.4879155192191818
+        },
+        {
+          "model": "RandomForest",
+          "overall_accuracy": 0.7039615846338535,
+          "macro_precision": 0.49899608433355624,
+          "macro_recall": 0.47656977172783577,
+          "macro_f1": 0.4738438762126032,
+          "balanced_accuracy": 0.47656977172783577
+        },
+        {
+          "model": "LogisticRegression",
+          "overall_accuracy": 0.6196878751500601,
+          "macro_precision": 0.4219829422723575,
+          "macro_recall": 0.46847333111207246,
+          "macro_f1": 0.42614112078501953,
+          "balanced_accuracy": 0.46847333111207246
+        },
+        {
+          "model": "MLP",
+          "overall_accuracy": 0.6873949579831933,
+          "macro_precision": 0.47636845656679105,
+          "macro_recall": 0.47017125779502117,
+          "macro_f1": 0.46371186468305936,
+          "balanced_accuracy": 0.47017125779502117
+        },
+        {
+          "model": "XGBoost",
+          "overall_accuracy": 0.6921968787515006,
+          "macro_precision": 0.4723315037738843,
+          "macro_recall": 0.46348591842206976,
+          "macro_f1": 0.457275613412884,
+          "balanced_accuracy": 0.46348591842206976
+        },
+        {
+          "model": "Ensemble",
+          "overall_accuracy": 0.6837935174069628,
+          "macro_precision": 0.4688681718117446,
+          "macro_recall": 0.47550015071525537,
+          "macro_f1": 0.46251310429120523,
+          "balanced_accuracy": 0.47550015071525537
+        }
+      ]
+    }
+  },
+  "reloaded_models": [
+    "RandomForest",
+    "LogisticRegression",
+    "MLP",
+    "XGBoost",
+    "CNN",
+    "ablation_imagenet_frozen",
+    "ablation_finetuned"
+  ],
+  "metrics_and_confusion_matrices_match": true,
+  "ensemble_members": [
+    "CNN",
+    "RandomForest",
+    "LogisticRegression",
+    "MLP",
+    "XGBoost"
+  ]
+}

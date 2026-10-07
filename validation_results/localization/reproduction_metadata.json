@@ -1,0 +1,29 @@
+{
+  "python_version": "3.12.14",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "3.0.1",
+    "matplotlib": "3.10.3",
+    "scikit-fmm": "2025.6.23"
+  },
+  "input_sha256": {
+    "stas_xyz.npy": "e02f95519b2cb7545859862d20e2a6676c72ed21eb496686f2dd73acdb863066",
+    "tobs_p.npy": "bc43fff480d1310af457802c10b5da6c950a5757610abad63626f8dc5aa708a7",
+    "pick_report.csv": "1fadfe23e66086be6ade1434ad3ccead8bd8037a028c3ba580b0d2d869a0939d"
+  },
+  "velocity_model_sha256": "42f1ab05e156e4fb1ebee11e78eb43fabd570ef0aefd51e400b5e6322dee1f11",
+  "grid_step_km": [
+    0.02,
+    0.02,
+    0.02
+  ],
+  "padding_km": 0.3,
+  "velocity_extension": "Linear interpolation where available; nearest neighbour elsewhere.",
+  "method_notes": [
+    "Source search bounds do not exclude paths through extended velocities.",
+    "Homogeneous refinement is a successive grid search; it does not use LM.",
+    "Jackknife shift is sensitivity to station omission, not an independent accuracy estimate.",
+    "The released-model solver can stop by excessive damping; inspect its console log."
+  ]
+}

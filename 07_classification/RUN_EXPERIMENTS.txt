@@ -1,0 +1,53 @@
+CLASSIFICATION: TRAIN, EVALUATE, AND REPRODUCE FIGURES
+
+Use Python 3.11 or newer and install the root requirements.txt. Run all commands
+from code-dataset. Replace the data and output paths with your local paths.
+Use a fresh output directory when changing the data, split, or run settings.
+
+1. Create the shared chronological split
+
+python 07_classification/split_manifest.py --data-root "../dataset/classified event-level waveform data" --split-policy whole-day-next --out ../experiment-results/whole_day_split_manifest.csv
+
+2. Train the five-class baselines
+
+python 07_classification/train_classification.py --data-root "../dataset/classified event-level waveform data" --split-manifest ../experiment-results/whole_day_split_manifest.csv --out-dir ../experiment-results/five_class --train-schema 5class --epochs 8 --batch-size 32 --seeds 42 --trust-source
+
+3. Train the four-class baselines using the same file assignments
+
+python 07_classification/train_classification.py --data-root "../dataset/classified event-level waveform data" --split-manifest ../experiment-results/whole_day_split_manifest.csv --out-dir ../experiment-results/four_class --train-schema 4class --epochs 10 --batch-size 32 --seeds 42 --trust-source
+
+4. Verify the saved predictions and metrics
+
+python 08_validation/validate_results.py --results ../experiment-results/five_class --out ../experiment-results/five_class_verification.json
+python 08_validation/validate_results.py --results ../experiment-results/four_class --out ../experiment-results/four_class_verification.json
+
+5. Calculate feature statistics and draw Figure 7
+
+python 08_validation/feature_statistics.py --results ../experiment-results/five_class
+python 08_validation/feature_statistics.py --results ../experiment-results/four_class
+python 08_validation/plot_validation.py --results ../experiment-results/four_class --out ../experiment-results/figure7
+
+Data and models
+The release contains 17,622 waveform records in five classes: microseismic,
+blasting, small_landslide, mechanical_mining, and transport_vehicles. Four-class
+training merges microseismic and small_landslide into natural_slope_events.
+Each run trains CNN, Random Forest, Logistic Regression, MLP, and XGBoost.
+
+Split and evaluation
+The supplied whole-day split has 11,437 training, 4,165 validation, and 2,020
+test records. Records are ordered by time within each original class. A date
+crossing either split boundary is moved wholly to the following subset. Date
+boundaries differ among original classes; both label tasks share file membership.
+All fitting uses training records, CNN selection uses validation macro-F1, and
+the test subset is reserved for final evaluation.
+
+Outputs
+Each classification directory contains run settings, file hashes, splits,
+checkpoints, saved predictions, confusion matrices, multimodel_metrics.csv,
+and summary.json. Metrics include accuracy, balanced accuracy, macro-F1, and
+per-class precision/recall/F1. Ensembles use all five classifiers for five-class
+evaluation and CNN plus Random Forest for four-class evaluation.
+
+The first CNN run downloads pretrained torchvision weights when they are not
+cached. Use --cpu to force CPU execution. NumPy dictionaries use pickle;
+--trust-source is for the trusted dataset download.

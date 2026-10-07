@@ -1,0 +1,34 @@
+{
+  "stage": "classification",
+  "script": "07_classification/train_classification.py",
+  "split_script": "07_classification/split_manifest.py",
+  "split_policy": "whole-day-next",
+  "trust_source": true,
+  "out_dir": "validation_results/four_class",
+  "split_manifest": "validation_results/whole_day_split_manifest.csv",
+  "ensemble_members": [
+    "CNN",
+    "RandomForest"
+  ],
+  "data_root": "../dataset/classified event-level waveform data",
+  "export_heads_only": false,
+  "force": false,
+  "epochs": 10,
+  "batch_size": 32,
+  "seeds": [
+    42
+  ],
+  "patience": 4,
+  "lr_head": 0.001,
+  "lr_backbone": 0.0001,
+  "weight_decay": 0.0001,
+  "cpu": false,
+  "skip_imagenet_baseline": false,
+  "weight_mode": "log",
+  "focal_gamma": 0.0,
+  "no_sampler": false,
+  "sampler_power": 0.3333333333333333,
+  "train_schema": "4class",
+  "mixup_alpha": 0.0,
+  "no_ensemble": false
+}

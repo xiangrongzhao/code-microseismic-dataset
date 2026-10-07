@@ -1,0 +1,7 @@
+# Tested together on Python 3.12.14; Python 3.11 or newer is required.
+numpy==1.26.4
+scipy==1.15.3
+pandas==3.0.1
+matplotlib==3.10.3
+scikit-fmm==2025.6.23
+pyproj==3.7.1

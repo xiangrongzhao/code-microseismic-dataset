@@ -1,0 +1,72 @@
+{
+  "n_samples_total": 17622,
+  "n_valid": 17622,
+  "n_train": 11437,
+  "n_val": 4165,
+  "n_test": 2020,
+  "train_schema": "5class",
+  "split_method": "within_five_class_chronological_whole_day_next",
+  "split_policy": "whole-day-next",
+  "split_sha256": "849f81263ea006a7d946a0f1a4020afe935b9b225456d895f0d07dd7af0e8af2",
+  "fit_subset": "train",
+  "ensemble_members": [
+    "CNN",
+    "RandomForest",
+    "LogisticRegression",
+    "MLP",
+    "XGBoost"
+  ],
+  "best_epoch": 5,
+  "classes": [
+    "microseismic",
+    "blasting",
+    "small_landslide",
+    "mechanical_mining",
+    "transport_vehicles"
+  ],
+  "class_display_names": [
+    "microseismic",
+    "blasting",
+    "small_landslide",
+    "mechanical_mining",
+    "transport_vehicles"
+  ],
+  "per_class_total": [
+    1401,
+    6512,
+    148,
+    7690,
+    1871
+  ],
+  "per_class_test": [
+    164,
+    775,
+    21,
+    847,
+    213
+  ],
+  "models": [
+    "CNN",
+    "RandomForest",
+    "LogisticRegression",
+    "MLP",
+    "XGBoost",
+    "Ensemble"
+  ],
+  "mean_overall_accuracy": 0.6732673267326733,
+  "std_overall_accuracy": 0.03227707586673867,
+  "mean_macro_f1": 0.4529383834169778,
+  "std_macro_f1": 0.01731422224914157,
+  "mean_balanced_accuracy": 0.4651286143397409,
+  "std_balanced_accuracy": 0.009208700177877161,
+  "seeds": [
+    42
+  ],
+  "median_seed": 42,
+  "cnn_test_acc_per_seed": {
+    "42": 0.65
+  },
+  "cnn_test_f1_per_seed": {
+    "42": 0.45794028296107553
+  }
+}

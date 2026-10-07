@@ -1,0 +1,43 @@
+{
+  "dataset_sha256": "df619d8bbd902a7865e4d78f0958c3b1f1ab9c89cc00c2ca7460726100af9eeb",
+  "split_sha256": "849f81263ea006a7d946a0f1a4020afe935b9b225456d895f0d07dd7af0e8af2",
+  "settings": {
+    "ensemble_members": [
+      "CNN",
+      "RandomForest"
+    ],
+    "epochs": 10,
+    "batch_size": 32,
+    "seeds": [
+      42
+    ],
+    "patience": 4,
+    "lr_head": 0.001,
+    "lr_backbone": 0.0001,
+    "weight_decay": 0.0001,
+    "cpu": false,
+    "skip_imagenet_baseline": false,
+    "weight_mode": "log",
+    "focal_gamma": 0.0,
+    "no_sampler": false,
+    "sampler_power": 0.3333333333333333,
+    "train_schema": "4class",
+    "mixup_alpha": 0.0,
+    "no_ensemble": false
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.0.2",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "joblib": "1.6.0",
+    "python": "3.12.14"
+  },
+  "code_sha256": "f61af51c6cab9cb80c15100eceb4b5c02be59845ca615b75554876a8c65904de",
+  "fit_subset": "train",
+  "split_policy": "whole-day-next",
+  "split_method": "within_five_class_chronological_whole_day_next"
+}

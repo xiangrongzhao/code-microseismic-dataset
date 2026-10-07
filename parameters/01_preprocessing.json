@@ -1,0 +1,14 @@
+{
+  "stage": "preprocessing",
+  "script": "01_preprocessing/preprocess_raw.py",
+  "input": "vertical-component (DHZ) miniSEED records",
+  "minimum_samples": 70000,
+  "bandpass_hz": [
+    1.0,
+    20.0
+  ],
+  "filter_corners": 4,
+  "zero_phase": true,
+  "detrend": false,
+  "instrument_response_removal": false
+}

@@ -1,0 +1,33 @@
+REPRESENTATIVE WAVEFORM EXAMPLES
+
+plot_representative_waveforms.py selects candidates from the five existing
+class folders and plots waveforms, spectrograms, and Welch power spectra.
+It reads source files without changing their samples or class labels.
+
+Run from code-dataset after installing requirements.txt. Replace the data and
+output paths with your local paths.
+
+1. Scan the classified dataset and draw candidate sheets
+
+python 08_validation/plot_representative_waveforms.py --data-root "../dataset/classified event-level waveform data" --out ../experiment-results/waveform_examples --stage scan --trust-source
+
+Outputs include candidate_metrics.csv, shortlist.json, scan_summary.json, and
+one candidate image per class. Candidate scores help select illustrative records;
+they do not validate the original class labels.
+
+2. Select one record per class
+
+Save selection.json in the output directory. It must contain exactly these five
+keys: microseismic, blasting, small_landslide, mechanical_mining, and
+transport_vehicles. For each key, copy one complete record entry from shortlist.json,
+including its relative_path and sha256 fields. To reproduce an existing selection,
+use that selection's saved manifest instead.
+
+3. Draw the selected records
+
+python 08_validation/plot_representative_waveforms.py --data-root "../dataset/classified event-level waveform data" --out ../experiment-results/waveform_examples --stage plot --selection ../experiment-results/waveform_examples/selection.json --trust-source
+
+The script verifies source checksums before plotting. Outputs include the combined
+figure and individual PNG/SVG panels for the waveforms and spectra.
+Use --stage text-free with the same selection file for panels without text.
+The NumPy dictionaries use pickle; use --trust-source only for trusted records.

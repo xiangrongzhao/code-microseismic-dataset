@@ -1,0 +1,23 @@
+{
+  "model": "RandomForest",
+  "overall_accuracy": 0.7049504950495049,
+  "macro_precision": 0.5040827424958632,
+  "macro_recall": 0.4669824328862943,
+  "macro_f1": 0.46382818121700903,
+  "balanced_accuracy": 0.4669824328862943,
+  "precision_microseismic": 0.20930232558139536,
+  "recall_microseismic": 0.054878048780487805,
+  "f1_microseismic": 0.08695652173913043,
+  "precision_blasting": 0.9166666666666666,
+  "recall_blasting": 0.5961290322580645,
+  "f1_blasting": 0.7224394057857702,
+  "precision_small_landslide": 0.0,
+  "recall_small_landslide": 0.0,
+  "f1_small_landslide": 0.0,
+  "precision_mechanical_mining": 0.6336791699920191,
+  "recall_mechanical_mining": 0.9374262101534829,
+  "f1_mechanical_mining": 0.7561904761904762,
+  "precision_transport_vehicles": 0.7607655502392344,
+  "recall_transport_vehicles": 0.7464788732394366,
+  "f1_transport_vehicles": 0.7535545023696683
+}
