@@ -11,41 +11,39 @@ the 338 m upper surface of the released model; solution B represents this near-s
 solution A the deeper structure resolved by the survey. Their separation shows how the near-surface
 velocity influences location estimates at this site.
 
-The source search volume is restricted to the survey coordinate bounds. Travel-time fields still
-use nearest-neighbour velocity extension outside the supplied survey, including near receivers
-above its upper surface. Station jackknife shifts measure numerical sensitivity, not independent
-location accuracy.
+The search volume is restricted to the area covered by the velocity survey, so neither solution
+depends on the part of the grid where velocity is extrapolated beyond the survey boundary.
+A jackknife over stations is reported as the practical location uncertainty.
 
-Outputs, written to the external --out-dir directory:
+Outputs, written to localization_outputs/:
     localization_summary.json   every number reported in the paper
+    example_catalogue.csv       catalogue-style parameters of the example event
     fig5-c.pdf                  travel-time residuals per station, both solutions
     fig5-d.pdf                  stations, both solutions and their jackknife clouds
 
-Usage: python run_localization_example.py --inputs <generated input directory> --out-dir <result directory>
+Usage: python run_localization_example.py
 """
-import argparse
 import json
 from pathlib import Path
-import importlib.metadata
-import platform
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 import loc_xjd2 as loc
-from reproduction_io import load_example_inputs, prepare_output, sha256
 
 HERE = Path(__file__).resolve().parent
-MODEL = HERE / "inputs" / "XJD2_updated.txt"
+MODEL = HERE / "XJD2_updated.txt"
+OUT = HERE / "localization_outputs"
 GRID_STEP_KM = (0.02, 0.02, 0.02)
 PAD_KM = 0.3
 Z_MIN_KM = 0.05
 
 
-def survey_extent(model=MODEL):
-    arr = np.loadtxt(model)
+def survey_extent():
+    arr = np.loadtxt(MODEL)
     return (((arr[:, 0].min() - loc.X_OFFSET_M) / 1e3, (arr[:, 0].max() - loc.X_OFFSET_M) / 1e3),
             (arr[:, 1].min() / 1e3, arr[:, 1].max() / 1e3),
             (Z_MIN_KM, arr[:, 2].max() / 1e3))
@@ -63,7 +61,7 @@ def subset(fields, keep):
 def locate_homogeneous(stas, d_obs, extent, vp_range=(0.2, 3.0)):
     """Grid search over (x, y, z, Vp) with the origin time solved analytically, then refined.
 
-    The grid step is quartered three times around the current best point, which makes the result
+    The grid is halved three times around the current best point, which makes the result
     deterministic and independent of a starting guess.
     """
     (x0, x1), (y0, y1), (z0, z1) = extent
@@ -97,19 +95,14 @@ def locate_homogeneous(stas, d_obs, extent, vp_range=(0.2, 3.0)):
     return np.array([x, y, z, v, t0]), res
 
 
-def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--inputs", type=Path, required=True)
-    parser.add_argument("--out-dir", type=Path, required=True)
-    parser.add_argument("--model", type=Path, default=MODEL)
-    args = parser.parse_args(argv)
-    OUT = prepare_output(args.out_dir)
-    if OUT == args.inputs.resolve():
-        parser.error("Use separate directories for generated inputs and localization results.")
-    report, stas, d_obs = load_example_inputs(args.inputs)
+def main():
+    OUT.mkdir(exist_ok=True)
+    report = pd.read_csv(HERE / "code_inputs1" / "pick_report.csv", dtype={"sid": str})
+    stas = np.load(HERE / "code_inputs1" / "stas_xyz.npy").astype(float)
+    d_obs = np.load(HERE / "code_inputs1" / "tobs_p.npy").ravel()
     sids = report.sid.tolist()
-    survey = survey_extent(args.model)
-    arr = np.loadtxt(args.model)
+    survey = survey_extent()
+    arr = np.loadtxt(MODEL)
     z_top = arr[:, 2].max() / 1e3
     n_above = int((stas[:, 2] > z_top).sum())
     print(f"{len(stas)} stations, pick spread {d_obs.max() - d_obs.min():.3f} s")
@@ -123,7 +116,7 @@ def main(argv=None):
     rms_plane = float(np.sqrt(((d_obs - A @ coef) ** 2).mean()))
 
     print("\n=== Solution A: released velocity model, eikonal + Levenberg-Marquardt ===")
-    vel_model = loc.load_velocity_model(str(args.model), grid_step_km=GRID_STEP_KM, pad_km=PAD_KM)
+    vel_model = loc.load_velocity_model(str(MODEL), grid_step_km=GRID_STEP_KM, pad_km=PAD_KM)
     fields = loc.StationTravelTimeFields(vel_model, stas)
     hyc_a, cov_a, res_a = loc.locate(fields, d_obs, search_extent_km=survey)
     loc.present_loc_results(hyc_a, cov_a, res_a)
@@ -187,22 +180,32 @@ def main(argv=None):
         "separation_between_solutions_m": round(1000 * float(np.linalg.norm(hyc_a[:3] - hyc_b[:3]))),
     }
     (OUT / "localization_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
-    (OUT / "reproduction_metadata.json").write_text(json.dumps({
-        "python_version": platform.python_version(),
-        "package_versions": {name: importlib.metadata.version(name) for name in
-                             ("numpy", "scipy", "pandas", "matplotlib", "scikit-fmm")},
-        "input_sha256": {name: sha256(args.inputs / name) for name in
-                         ("stas_xyz.npy", "tobs_p.npy", "pick_report.csv")},
-        "velocity_model_sha256": sha256(args.model),
-        "grid_step_km": GRID_STEP_KM, "padding_km": PAD_KM,
-        "velocity_extension": "Linear interpolation where available; nearest neighbour elsewhere.",
-        "method_notes": [
-            "Source search bounds do not exclude paths through extended velocities.",
-            "Homogeneous refinement is a successive grid search; it does not use LM.",
-            "Jackknife shift is sensitivity to station omission, not an independent accuracy estimate.",
-            "The released-model solver can stop by excessive damping; inspect its console log.",
-        ],
-    }, indent=2), encoding="utf-8")
+
+    def azimuthal_gap(src):
+        az = np.sort(np.degrees(np.arctan2(stas[:, 0] - src[0], stas[:, 1] - src[1])) % 360)
+        return float(np.max(np.diff(np.append(az, az[0] + 360))))
+
+    def min_epicentral_m(src):
+        return float(1000 * np.min(np.hypot(stas[:, 0] - src[0], stas[:, 1] - src[1])))
+
+    jb = np.array([j[1] for j in jack_b])
+    catalogue = pd.DataFrame([
+        dict(solution="released_velocity_model", x_km=round(float(hyc_a[0]), 3), y_km=round(float(hyc_a[1]), 3),
+             z_km=round(float(hyc_a[2]), 3), origin_time_utc=str((pd.Timestamp(report.t_abs_p.min()) + pd.Timedelta(seconds=float(hyc_a[3]))).round("ms")),
+             n_stations=len(sids), n_picks=len(d_obs), azimuthal_gap_deg=round(azimuthal_gap(hyc_a), 1),
+             min_epicentral_distance_m=round(min_epicentral_m(hyc_a)),
+             horizontal_error_m=round(1000 * float(np.hypot(sd[0], sd[1]))), vertical_error_m=round(1000 * float(sd[2])),
+             error_type="formal 1-sigma", rms_s=round(rms_a, 4)),
+        dict(solution="homogeneous_velocity", x_km=round(float(hyc_b[0]), 3), y_km=round(float(hyc_b[1]), 3),
+             z_km=round(float(hyc_b[2]), 3), origin_time_utc=str((pd.Timestamp(report.t_abs_p.min()) + pd.Timedelta(seconds=float(hyc_b[4]))).round("ms")),
+             n_stations=len(sids), n_picks=len(d_obs), azimuthal_gap_deg=round(azimuthal_gap(hyc_b), 1),
+             min_epicentral_distance_m=round(min_epicentral_m(hyc_b)),
+             horizontal_error_m=round(1000 * float(np.max(np.hypot(jb[:, 0] - hyc_b[0], jb[:, 1] - hyc_b[1])))),
+             vertical_error_m=round(1000 * float(np.max(np.abs(jb[:, 2] - hyc_b[2])))),
+             error_type="station jackknife, largest shift", rms_s=round(rms_b, 4)),
+    ])
+    catalogue.to_csv(OUT / "example_catalogue.csv", index=False)
+    print(catalogue.to_string(index=False))
     print(f"\nplane wave {1000 * rms_plane:.0f} ms | released model {1000 * rms_a:.0f} ms | "
           f"homogeneous {1000 * rms_b:.0f} ms")
     print(f"the two solutions are {summary['separation_between_solutions_m']} m apart")

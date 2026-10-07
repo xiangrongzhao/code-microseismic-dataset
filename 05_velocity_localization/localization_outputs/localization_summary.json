@@ -1,0 +1,85 @@
+{
+  "event_class_label": "small landslide",
+  "event_first_pick_utc": "2025-06-09 22:01:51.764",
+  "station_ids": [
+    "230000086",
+    "230000120",
+    "230000116",
+    "230000087",
+    "230000085",
+    "230000112",
+    "230000119"
+  ],
+  "n_stations": 7,
+  "pick_spread_s": 0.552,
+  "velocity_survey_top_km": 0.338,
+  "n_stations_above_survey_top": 4,
+  "search_extent_km": {
+    "x": [
+      392.2547449170016,
+      393.05633847799896
+    ],
+    "y": [
+      4865.562241804,
+      4865.975112621
+    ],
+    "z": [
+      0.05,
+      0.33833401500000004
+    ]
+  },
+  "plane_wave_rms_s": 0.0529,
+  "solution_A_released_velocity_model": {
+    "location_km": {
+      "x": 392.2747,
+      "y": 4865.9422,
+      "z": 0.1592
+    },
+    "origin_time_s": -0.3975,
+    "formal_1sigma": {
+      "x_km": 0.073,
+      "y_km": 0.105,
+      "z_km": 0.15,
+      "t0_s": 0.427
+    },
+    "residuals_s": [
+      -0.0925,
+      -0.0081,
+      -0.039,
+      0.011,
+      0.0014,
+      0.0172,
+      0.11
+    ],
+    "residual_rms_s": 0.0569,
+    "residual_max_abs_s": 0.11,
+    "jackknife_max_shift_m": 0
+  },
+  "solution_B_homogeneous_velocity": {
+    "location_km": {
+      "x": 392.4947,
+      "y": 4865.971,
+      "z": 0.2162
+    },
+    "vp_kms": 0.491,
+    "origin_time_s": -0.24,
+    "residuals_s": [
+      0.0009,
+      -0.0002,
+      -0.0041,
+      0.0003,
+      0.0035,
+      0.0017,
+      -0.0021
+    ],
+    "residual_rms_s": 0.0023,
+    "residual_max_abs_s": 0.0041,
+    "jackknife_max_shift_m": 35,
+    "jackknife_vp_range_kms": [
+      0.44,
+      0.5
+    ]
+  },
+  "point_source_improvement_over_plane_wave": 22.8,
+  "separation_between_solutions_m": 229
+}

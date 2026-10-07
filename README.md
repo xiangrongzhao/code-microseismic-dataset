@@ -92,18 +92,16 @@ python 07_classification/train_classification.py --data-root "../dataset/classif
 
 The supplied archive produces 11,437 training, 4,165 validation, and 2,020 test records. Both tasks use the same file assignments. Date separation is applied within each original class. See [RUN_EXPERIMENTS.txt](07_classification/RUN_EXPERIMENTS.txt) for evaluation and figure commands.
 
-Regenerate arrivals from the seven bundled waveforms and reproduce the localization example:
+The localization example is a self-contained directory with its seven waveforms, station table, velocity model (`XJD2_updated.txt`), the pick set `code_inputs1` (`stas_xyz.npy`, `tobs_p.npy`, `pick_report.csv`, `input_provenance.json`) and the reference outputs in `localization_outputs` (`localization_summary.json`, `example_catalogue.csv`, Figure 5c/d panels). Rebuild the picks from the bundled waveforms, reproduce both solutions and run the inversion checks:
 
 ```shell
-python 05_velocity_localization/make_inputs1.py --out-dir ../experiment-results/localization_inputs
-python 05_velocity_localization/run_localization_example.py --inputs ../experiment-results/localization_inputs --out-dir ../experiment-results/localization
+python -m pip install -r 05_velocity_localization/requirements.txt
+python 05_velocity_localization/make_inputs1.py
+python 05_velocity_localization/run_localization_example.py
+python 05_velocity_localization/test_loc_xjd2.py
 ```
 
-The localization example includes its waveforms, station table, velocity model (`XJD2_updated.txt`) and the pick set `05_velocity_localization/code_inputs1` (`stas_xyz.npy`, `tobs_p.npy`, `pick_report.csv`, `input_provenance.json`), which `make_inputs1.py` rebuilds from the bundled waveforms. To reproduce the reported solutions directly from the bundled picks:
-
-```shell
-python 05_velocity_localization/run_localization_example.py --inputs 05_velocity_localization/code_inputs1 --out-dir ../experiment-results/localization
-```
+`make_inputs1.py` rewrites `code_inputs1` and `run_localization_example.py` rewrites `localization_outputs`; rerunning them reproduces the released files.
 
 See [the localization guide](05_velocity_localization/README.txt) for expected values and verification.
 
@@ -151,7 +149,7 @@ code-microseismic-dataset/
 | Preprocessing | Filtered `.npz` waveforms and `preprocessing.json` |
 | Detection and review | Candidate `.npy` records, `detection_summary.json`, and `annotation_template.json` |
 | Classification | Split assignments, model checkpoints, predictions, `multimodel_metrics.csv`, and `summary.json` |
-| Localization | Rebuilt arrival arrays, `pick_report.csv`, `localization_summary.json`, and Figure 5c/d panels |
+| Localization | Rebuilt arrival arrays, `pick_report.csv`, `localization_summary.json`, `example_catalogue.csv`, and Figure 5c/d panels |
 | Validation | Integrity reports, coverage tables, and recalculated classification metrics |
 
 Classification reports include accuracy, balanced accuracy, macro-F1, per-class scores, and confusion matrices. Use a fresh classification output directory when changing the data, split, or settings. In the localization example, the released-model L-M iteration stops when damping becomes too large; its reproducible result does not demonstrate convergence or independently measured location accuracy.

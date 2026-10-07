@@ -136,6 +136,6 @@ def plot(model,out):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--model',type=Path,default=Path(__file__).parent/'inputs'/'XJD2_updated.txt')
+    p.add_argument('--model',type=Path,default=Path(__file__).parent/'XJD2_updated.txt')
     p.add_argument('--out',type=Path,required=True)
     args=p.parse_args();plot(args.model,args.out)

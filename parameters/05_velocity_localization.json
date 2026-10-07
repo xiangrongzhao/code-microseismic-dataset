@@ -19,7 +19,7 @@
     "minimum_snr": 3.0,
     "picker": "AIC"
   },
-  "velocity_model": "05_velocity_localization/inputs/XJD2_updated.txt",
+  "velocity_model": "05_velocity_localization/XJD2_updated.txt",
   "vp_from_vs": "Vp = sqrt(3) * Vs (Poisson ratio 0.25)",
   "grid_step_km": [
     0.02,

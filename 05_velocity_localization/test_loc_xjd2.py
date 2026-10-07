@@ -1,46 +1,42 @@
 """Verification of the localization code in loc_xjd2.py.
 
-Test 1 checks half-grid finite-difference derivative consistency, and the rank of
+Test 1 checks the travel-time derivatives: the analytic partial derivatives with respect to source
+        position are compared with finite differences of the computed travel times, and the rank of
         the station Jacobian is reported. A rank below three means the source position cannot be
         resolved, whatever the data.
 Test 2 recovers synthetic sources whose positions are known by construction: travel times are
         computed with the same eikonal solver, perturbed by pick noise, and inverted.
-Test 3 reports the solution for the regenerated example picks.
+Test 3 reports the solution for the released picks in code_inputs1/.
 
-Usage: python test_loc_xjd2.py --inputs <generated input directory>
+Usage: python test_loc_xjd2.py
 """
-import argparse
 from pathlib import Path
 
 import numpy as np
 
 import loc_xjd2 as loc
-from reproduction_io import load_example_inputs
 
 HERE = Path(__file__).resolve().parent
-MODEL = HERE / "inputs" / "XJD2_updated.txt"
+MODEL = HERE / "XJD2_updated.txt"
 PICK_NOISE_S = 0.01
 SEED = 0
 SYNTHETIC_SOURCES = ([392.70, 4865.75, 0.25], [392.55, 4865.90, 0.15], [392.85, 4865.65, 0.30],
                      [392.45, 4865.70, 0.20], [392.95, 4865.85, 0.10])
 
 
-def survey_extent(model=MODEL):
-    arr = np.loadtxt(model)
+def survey_extent():
+    arr = np.loadtxt(MODEL)
     return (((arr[:, 0].min() - loc.X_OFFSET_M) / 1e3, (arr[:, 0].max() - loc.X_OFFSET_M) / 1e3),
             (arr[:, 1].min() / 1e3, arr[:, 1].max() / 1e3), (0.05, arr[:, 2].max() / 1e3))
 
 
-def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--inputs", type=Path, required=True)
-    parser.add_argument("--model", type=Path, default=MODEL)
-    args = parser.parse_args(argv)
-    _, stas, d_obs = load_example_inputs(args.inputs)
-    vel_model = loc.load_velocity_model(str(args.model), grid_step_km=(0.02, 0.02, 0.02), pad_km=0.3,
+def main():
+    stas = np.load(HERE / "code_inputs1" / "stas_xyz.npy").astype(float)
+    d_obs = np.load(HERE / "code_inputs1" / "tobs_p.npy").ravel()
+    vel_model = loc.load_velocity_model(str(MODEL), grid_step_km=(0.02, 0.02, 0.02), pad_km=0.3,
                                         verbose=False)
     fields = loc.StationTravelTimeFields(vel_model, stas, verbose=False)
-    survey = survey_extent(args.model)
+    survey = survey_extent()
 
     print("=== Test 1: travel-time derivatives ===")
     p = np.array([392.70, 4865.75, 0.25])
@@ -52,7 +48,7 @@ def main(argv=None):
         a[j] += h
         b[j] -= h
         Gfd[:, j] = (fields.travel_times(a) - fields.travel_times(b)) / (2 * h)
-    print(f"  max |half-grid derivative - finite difference| = {np.abs(G - Gfd).max():.2e} s/km")
+    print(f"  max |analytic - finite difference| = {np.abs(G - Gfd).max():.2e} s/km")
     print(f"  rank of the station Jacobian = {np.linalg.matrix_rank(G)} (3 is required)")
 
     print(f"\n=== Test 2: recovery of synthetic sources ({PICK_NOISE_S} s pick noise) ===")
@@ -70,7 +66,7 @@ def main(argv=None):
     print(f"  horizontal error: median {np.median(eh):.0f} m, maximum {np.max(eh):.0f} m")
     print(f"  depth error:      median {np.median(ev):.0f} m, maximum {np.max(ev):.0f} m")
 
-    print("\n=== Test 3: regenerated example picks ===")
+    print("\n=== Test 3: released picks in code_inputs1 ===")
     hyc, cov, res = loc.locate(fields, d_obs, search_extent_km=survey, verbose=False)
     loc.present_loc_results(hyc, cov, res)
     print("  residuals (s):", np.round(res, 4).tolist())
