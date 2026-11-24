@@ -1,0 +1,56 @@
+MICROSEISMIC DATASET: DIRECTORY GUIDE
+
+This dataset contains four data folders and this directory guide.
+
+1. classified event-level waveform data/
+   Contents: 17,622 labelled NumPy (.npy) files in five class folders.
+
+   Subfolder                  Number of files   Event class
+   microseismic/                        1,401   Microseismic events
+   blasting/                            6,512   Blasting
+   small_landslide/                        148   Small landslides
+   mechanical_mining/                   7,690   Mechanical mining
+   transport_vehicles/                  1,871   Transport vehicles
+   Total                               17,622
+
+   Purpose: Waveform examples for signal analysis and event classification.
+
+2. raw waveform data/
+   Contents: 15,360 single-component miniSEED (.miniseed) files from 31 stations on 1 June 2025. Temporal coverage varies by station.
+   Purpose: Original waveform segments for preprocessing, event detection, and examination of the recorded signals.
+
+3. station metadata/
+   Contents: 2 Excel (.xlsx) files:
+     Sensor location（internal dump slope）.xlsx
+     Sensor location（southern highwall）.xlsx
+   Purpose: Station identifiers, geographic coordinates, and elevations for the two monitoring areas, supporting station lookup and mapping.
+
+4. data logs/
+   Contents: 3 Excel workbooks, 3 CSV association tables and 1 StationXML inventory file.
+
+     data_20250601_20250720.xls
+       Monitoring availability by station and date, 1 June–20 July 2025.
+
+     data_20250601.xlsx
+       Raw-data availability by station in five-minute intervals on 1 June 2025.
+
+     event_counts_20250601_20250720.xlsx
+       Daily waveform-record counts by class, 1 June–20 July 2025, and a summary of the training, validation, and test split.
+
+     five_class_event_catalog.csv
+       8,217 rows, one per catalogue event across the five classes. Each row gives the event ID, class label, participating station IDs and UTC trigger times by station.
+
+     waveform_to_event_id.csv
+       17,622 rows, one per released waveform, with its event ID, station ID, class label, UTC trigger times and relative file path.
+
+     blasting_station_count_distribution.csv
+       36 rows, one for each possible number of distinct stations per event (1 through 36), with the corresponding numbers of blasting events and waveform records.
+
+     station-inventory.xml
+       Derived FDSN StationXML-1.1 inventory for the 31 stations in the 1 June 2025 raw-waveform example. 
+
+   Purpose: Check recording availability and class counts, trace waveforms to catalogue events, examine station coverage, and provide the instrument-response skeleton.
+
+5. file-directory documentation.txt
+   Contents: 1 text file (this guide).
+   Purpose: Summarize the folders, file counts, and intended uses.

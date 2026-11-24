@@ -1,0 +1,76 @@
+{
+  "total": 17622,
+  "five_class_counts": {
+    "microseismic": 1401,
+    "blasting": 6512,
+    "small_landslide": 148,
+    "mechanical_mining": 7690,
+    "transport_vehicles": 1871
+  },
+  "four_class_counts": {
+    "Natural slope events": 1549,
+    "Blasting": 6512,
+    "Mechanical mining": 7690,
+    "Transport vehicles": 1871
+  },
+  "split": {
+    "train": 11437,
+    "val": 4165,
+    "test": 2020
+  },
+  "four_class_split": {
+    "Natural slope events": {
+      "train": 1079,
+      "val": 285,
+      "test": 185
+    },
+    "Blasting": {
+      "train": 4141,
+      "val": 1596,
+      "test": 775
+    },
+    "Mechanical mining": {
+      "train": 4950,
+      "val": 1893,
+      "test": 847
+    },
+    "Transport vehicles": {
+      "train": 1267,
+      "val": 391,
+      "test": 213
+    }
+  },
+  "split_shares": {
+    "train": 0.6490182726137782,
+    "val": 0.23635228691408466,
+    "test": 0.1146294404721371
+  },
+  "split_policy": "whole-day-next",
+  "per_class_scores_percent": {
+    "Natural slope events": [
+      13.690476190476192,
+      12.432432432432433,
+      13.031161473087819
+    ],
+    "Blasting": [
+      91.19638826185101,
+      52.12903225806451,
+      66.33825944170772
+    ],
+    "Mechanical mining": [
+      66.66666666666666,
+      92.32585596221959,
+      77.42574257425743
+    ],
+    "Transport vehicles": [
+      76.69491525423729,
+      84.97652582159625,
+      80.62360801781738
+    ],
+    "Overall (macro)": [
+      62.06211159330779,
+      60.4659616185782,
+      59.354692876717586
+    ]
+  }
+}

@@ -1,0 +1,2435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDSNStationXML schemaVersion="1.1" xmlns="http://www.fdsn.org/xml/station/1">
+  <Source>Open-pit mine slope monitoring dataset: station workbooks and miniSEED headers</Source>
+  <Created>2026-11-23T14:20:55Z</Created>
+  <Network code="SS" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+    <Description>Open-pit mine slope monitoring array (1 June 2025 raw-waveform example)</Description>
+    <Comment>
+      <Value>FDSN StationXML 1.1 skeleton for the 31 stations present in the 1 June 2025 raw-waveform example. Coordinates are taken from the station-metadata workbooks. Elevations are reported ground levels; the geophone burial depth is represented by a nominal 0.65 m (midpoint of the 0.50-0.80 m installation range), not a station-specific survey.</Value>
+    </Comment>
+    <Comment>
+      <Value>Network code SS and channel codes DHE/DHN/DHZ follow the archived miniSEED headers. In the 1 June filenames, the horizontal suffixes DHE and DHN are interchanged relative to those headers. Physical horizontal azimuths were not surveyed; DHN/DHE azimuths below are conventional placeholders (0 deg / 90 deg) for inventory completeness only.</Value>
+    </Comment>
+    <Comment>
+      <Value>No field-calibrated pole-zero response is available. Empty Response elements indicate that recorded counts cannot be converted to ground motion with this file. The geophone open-circuit generator constant is nominally 80 V/(m/s) (+/-5%); recorder preamplifier gain in the field was 0 dB.</Value>
+    </Comment>
+    <Station alternateCode="230000081" code="00081" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000081</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000081. SEED station code truncated to 00081.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.918168611</Latitude>
+      <Longitude unit="DEGREES">94.664481111</Longitude>
+      <Elevation unit="METERS">388.73</Elevation>
+      <Site>
+        <Name>Project station 230000081</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918168611</Latitude>
+        <Longitude unit="DEGREES">94.664481111</Longitude>
+        <Elevation unit="METERS">388.08</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918168611</Latitude>
+        <Longitude unit="DEGREES">94.664481111</Longitude>
+        <Elevation unit="METERS">388.08</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918168611</Latitude>
+        <Longitude unit="DEGREES">94.664481111</Longitude>
+        <Elevation unit="METERS">388.08</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000082" code="00082" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000082</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000082. SEED station code truncated to 00082.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.918699167</Latitude>
+      <Longitude unit="DEGREES">94.666865</Longitude>
+      <Elevation unit="METERS">367.11</Elevation>
+      <Site>
+        <Name>Project station 230000082</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918699167</Latitude>
+        <Longitude unit="DEGREES">94.666865</Longitude>
+        <Elevation unit="METERS">366.46</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918699167</Latitude>
+        <Longitude unit="DEGREES">94.666865</Longitude>
+        <Elevation unit="METERS">366.46</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918699167</Latitude>
+        <Longitude unit="DEGREES">94.666865</Longitude>
+        <Elevation unit="METERS">366.46</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000083" code="00083" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000083</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000083. SEED station code truncated to 00083.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.920536111</Latitude>
+      <Longitude unit="DEGREES">94.662770556</Longitude>
+      <Elevation unit="METERS">246.46</Elevation>
+      <Site>
+        <Name>Project station 230000083</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920536111</Latitude>
+        <Longitude unit="DEGREES">94.662770556</Longitude>
+        <Elevation unit="METERS">245.81</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920536111</Latitude>
+        <Longitude unit="DEGREES">94.662770556</Longitude>
+        <Elevation unit="METERS">245.81</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920536111</Latitude>
+        <Longitude unit="DEGREES">94.662770556</Longitude>
+        <Elevation unit="METERS">245.81</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000084" code="00084" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000084</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000084. SEED station code truncated to 00084.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.928335833</Latitude>
+      <Longitude unit="DEGREES">94.628120278</Longitude>
+      <Elevation unit="METERS">228.09</Elevation>
+      <Site>
+        <Name>Project station 230000084</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928335833</Latitude>
+        <Longitude unit="DEGREES">94.628120278</Longitude>
+        <Elevation unit="METERS">227.44</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928335833</Latitude>
+        <Longitude unit="DEGREES">94.628120278</Longitude>
+        <Elevation unit="METERS">227.44</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928335833</Latitude>
+        <Longitude unit="DEGREES">94.628120278</Longitude>
+        <Elevation unit="METERS">227.44</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000085" code="00085" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000085</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000085. SEED station code truncated to 00085.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.919173611</Latitude>
+      <Longitude unit="DEGREES">94.6635425</Longitude>
+      <Elevation unit="METERS">372.51</Elevation>
+      <Site>
+        <Name>Project station 230000085</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919173611</Latitude>
+        <Longitude unit="DEGREES">94.6635425</Longitude>
+        <Elevation unit="METERS">371.86</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919173611</Latitude>
+        <Longitude unit="DEGREES">94.6635425</Longitude>
+        <Elevation unit="METERS">371.86</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919173611</Latitude>
+        <Longitude unit="DEGREES">94.6635425</Longitude>
+        <Elevation unit="METERS">371.86</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000086" code="00086" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000086</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000086. SEED station code truncated to 00086.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.920335833</Latitude>
+      <Longitude unit="DEGREES">94.661617222</Longitude>
+      <Elevation unit="METERS">324.60</Elevation>
+      <Site>
+        <Name>Project station 230000086</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920335833</Latitude>
+        <Longitude unit="DEGREES">94.661617222</Longitude>
+        <Elevation unit="METERS">323.95</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920335833</Latitude>
+        <Longitude unit="DEGREES">94.661617222</Longitude>
+        <Elevation unit="METERS">323.95</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920335833</Latitude>
+        <Longitude unit="DEGREES">94.661617222</Longitude>
+        <Elevation unit="METERS">323.95</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000087" code="00087" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000087</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000087. SEED station code truncated to 00087.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.919296944</Latitude>
+      <Longitude unit="DEGREES">94.661224722</Longitude>
+      <Elevation unit="METERS">367.47</Elevation>
+      <Site>
+        <Name>Project station 230000087</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919296944</Latitude>
+        <Longitude unit="DEGREES">94.661224722</Longitude>
+        <Elevation unit="METERS">366.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919296944</Latitude>
+        <Longitude unit="DEGREES">94.661224722</Longitude>
+        <Elevation unit="METERS">366.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919296944</Latitude>
+        <Longitude unit="DEGREES">94.661224722</Longitude>
+        <Elevation unit="METERS">366.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000089" code="00089" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000089</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000089. SEED station code truncated to 00089.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.929595556</Latitude>
+      <Longitude unit="DEGREES">94.635556667</Longitude>
+      <Elevation unit="METERS">269.90</Elevation>
+      <Site>
+        <Name>Project station 230000089</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929595556</Latitude>
+        <Longitude unit="DEGREES">94.635556667</Longitude>
+        <Elevation unit="METERS">269.25</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929595556</Latitude>
+        <Longitude unit="DEGREES">94.635556667</Longitude>
+        <Elevation unit="METERS">269.25</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929595556</Latitude>
+        <Longitude unit="DEGREES">94.635556667</Longitude>
+        <Elevation unit="METERS">269.25</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000090" code="00090" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000090</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000090. SEED station code truncated to 00090.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.929245556</Latitude>
+      <Longitude unit="DEGREES">94.643668056</Longitude>
+      <Elevation unit="METERS">266.40</Elevation>
+      <Site>
+        <Name>Project station 230000090</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929245556</Latitude>
+        <Longitude unit="DEGREES">94.643668056</Longitude>
+        <Elevation unit="METERS">265.75</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929245556</Latitude>
+        <Longitude unit="DEGREES">94.643668056</Longitude>
+        <Elevation unit="METERS">265.75</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929245556</Latitude>
+        <Longitude unit="DEGREES">94.643668056</Longitude>
+        <Elevation unit="METERS">265.75</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000091" code="00091" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000091</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000091. SEED station code truncated to 00091.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.9315875</Latitude>
+      <Longitude unit="DEGREES">94.631723889</Longitude>
+      <Elevation unit="METERS">327.26</Elevation>
+      <Site>
+        <Name>Project station 230000091</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9315875</Latitude>
+        <Longitude unit="DEGREES">94.631723889</Longitude>
+        <Elevation unit="METERS">326.61</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9315875</Latitude>
+        <Longitude unit="DEGREES">94.631723889</Longitude>
+        <Elevation unit="METERS">326.61</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9315875</Latitude>
+        <Longitude unit="DEGREES">94.631723889</Longitude>
+        <Elevation unit="METERS">326.61</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000092" code="00092" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000092</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000092. SEED station code truncated to 00092.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.919721389</Latitude>
+      <Longitude unit="DEGREES">94.667605556</Longitude>
+      <Elevation unit="METERS">329.47</Elevation>
+      <Site>
+        <Name>Project station 230000092</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919721389</Latitude>
+        <Longitude unit="DEGREES">94.667605556</Longitude>
+        <Elevation unit="METERS">328.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919721389</Latitude>
+        <Longitude unit="DEGREES">94.667605556</Longitude>
+        <Elevation unit="METERS">328.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919721389</Latitude>
+        <Longitude unit="DEGREES">94.667605556</Longitude>
+        <Elevation unit="METERS">328.82</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000093" code="00093" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000093</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000093. SEED station code truncated to 00093.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.929843611</Latitude>
+      <Longitude unit="DEGREES">94.631216944</Longitude>
+      <Elevation unit="METERS">288.06</Elevation>
+      <Site>
+        <Name>Project station 230000093</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929843611</Latitude>
+        <Longitude unit="DEGREES">94.631216944</Longitude>
+        <Elevation unit="METERS">287.41</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929843611</Latitude>
+        <Longitude unit="DEGREES">94.631216944</Longitude>
+        <Elevation unit="METERS">287.41</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929843611</Latitude>
+        <Longitude unit="DEGREES">94.631216944</Longitude>
+        <Elevation unit="METERS">287.41</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000094" code="00094" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000094</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000094. SEED station code truncated to 00094.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.928856667</Latitude>
+      <Longitude unit="DEGREES">94.631066111</Longitude>
+      <Elevation unit="METERS">248.39</Elevation>
+      <Site>
+        <Name>Project station 230000094</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928856667</Latitude>
+        <Longitude unit="DEGREES">94.631066111</Longitude>
+        <Elevation unit="METERS">247.74</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928856667</Latitude>
+        <Longitude unit="DEGREES">94.631066111</Longitude>
+        <Elevation unit="METERS">247.74</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928856667</Latitude>
+        <Longitude unit="DEGREES">94.631066111</Longitude>
+        <Elevation unit="METERS">247.74</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000096" code="00096" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000096</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000096. SEED station code truncated to 00096.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.918655833</Latitude>
+      <Longitude unit="DEGREES">94.662485833</Longitude>
+      <Elevation unit="METERS">389.22</Elevation>
+      <Site>
+        <Name>Project station 230000096</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918655833</Latitude>
+        <Longitude unit="DEGREES">94.662485833</Longitude>
+        <Elevation unit="METERS">388.57</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918655833</Latitude>
+        <Longitude unit="DEGREES">94.662485833</Longitude>
+        <Elevation unit="METERS">388.57</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918655833</Latitude>
+        <Longitude unit="DEGREES">94.662485833</Longitude>
+        <Elevation unit="METERS">388.57</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000098" code="00098" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000098</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000098. SEED station code truncated to 00098.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.929864722</Latitude>
+      <Longitude unit="DEGREES">94.628995</Longitude>
+      <Elevation unit="METERS">289.45</Elevation>
+      <Site>
+        <Name>Project station 230000098</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929864722</Latitude>
+        <Longitude unit="DEGREES">94.628995</Longitude>
+        <Elevation unit="METERS">288.80</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929864722</Latitude>
+        <Longitude unit="DEGREES">94.628995</Longitude>
+        <Elevation unit="METERS">288.80</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.929864722</Latitude>
+        <Longitude unit="DEGREES">94.628995</Longitude>
+        <Elevation unit="METERS">288.80</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000099" code="00099" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000099</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000099. SEED station code truncated to 00099.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.919768333</Latitude>
+      <Longitude unit="DEGREES">94.660238056</Longitude>
+      <Elevation unit="METERS">348.50</Elevation>
+      <Site>
+        <Name>Project station 230000099</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919768333</Latitude>
+        <Longitude unit="DEGREES">94.660238056</Longitude>
+        <Elevation unit="METERS">347.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919768333</Latitude>
+        <Longitude unit="DEGREES">94.660238056</Longitude>
+        <Elevation unit="METERS">347.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919768333</Latitude>
+        <Longitude unit="DEGREES">94.660238056</Longitude>
+        <Elevation unit="METERS">347.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000100" code="00100" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000100</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000100. SEED station code truncated to 00100.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.918658056</Latitude>
+      <Longitude unit="DEGREES">94.661236667</Longitude>
+      <Elevation unit="METERS">388.19</Elevation>
+      <Site>
+        <Name>Project station 230000100</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918658056</Latitude>
+        <Longitude unit="DEGREES">94.661236667</Longitude>
+        <Elevation unit="METERS">387.54</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918658056</Latitude>
+        <Longitude unit="DEGREES">94.661236667</Longitude>
+        <Elevation unit="METERS">387.54</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918658056</Latitude>
+        <Longitude unit="DEGREES">94.661236667</Longitude>
+        <Elevation unit="METERS">387.54</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000102" code="00102" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000102</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000102. SEED station code truncated to 00102.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.930226389</Latitude>
+      <Longitude unit="DEGREES">94.641299167</Longitude>
+      <Elevation unit="METERS">290.37</Elevation>
+      <Site>
+        <Name>Project station 230000102</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930226389</Latitude>
+        <Longitude unit="DEGREES">94.641299167</Longitude>
+        <Elevation unit="METERS">289.72</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930226389</Latitude>
+        <Longitude unit="DEGREES">94.641299167</Longitude>
+        <Elevation unit="METERS">289.72</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930226389</Latitude>
+        <Longitude unit="DEGREES">94.641299167</Longitude>
+        <Elevation unit="METERS">289.72</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000103" code="00103" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000103</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000103. SEED station code truncated to 00103.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.9294775</Latitude>
+      <Longitude unit="DEGREES">94.639965278</Longitude>
+      <Elevation unit="METERS">270.95</Elevation>
+      <Site>
+        <Name>Project station 230000103</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9294775</Latitude>
+        <Longitude unit="DEGREES">94.639965278</Longitude>
+        <Elevation unit="METERS">270.30</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9294775</Latitude>
+        <Longitude unit="DEGREES">94.639965278</Longitude>
+        <Elevation unit="METERS">270.30</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9294775</Latitude>
+        <Longitude unit="DEGREES">94.639965278</Longitude>
+        <Elevation unit="METERS">270.30</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000104" code="00104" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000104</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000104. SEED station code truncated to 00104.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.919833333</Latitude>
+      <Longitude unit="DEGREES">94.665561667</Longitude>
+      <Elevation unit="METERS">351.68</Elevation>
+      <Site>
+        <Name>Project station 230000104</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919833333</Latitude>
+        <Longitude unit="DEGREES">94.665561667</Longitude>
+        <Elevation unit="METERS">351.03</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919833333</Latitude>
+        <Longitude unit="DEGREES">94.665561667</Longitude>
+        <Elevation unit="METERS">351.03</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.919833333</Latitude>
+        <Longitude unit="DEGREES">94.665561667</Longitude>
+        <Elevation unit="METERS">351.03</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000105" code="00105" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000105</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000105. SEED station code truncated to 00105.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.9290525</Latitude>
+      <Longitude unit="DEGREES">94.6457625</Longitude>
+      <Elevation unit="METERS">67.59</Elevation>
+      <Site>
+        <Name>Project station 230000105</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9290525</Latitude>
+        <Longitude unit="DEGREES">94.6457625</Longitude>
+        <Elevation unit="METERS">66.94</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9290525</Latitude>
+        <Longitude unit="DEGREES">94.6457625</Longitude>
+        <Elevation unit="METERS">66.94</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9290525</Latitude>
+        <Longitude unit="DEGREES">94.6457625</Longitude>
+        <Elevation unit="METERS">66.94</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000106" code="00106" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000106</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000106. SEED station code truncated to 00106.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.928774444</Latitude>
+      <Longitude unit="DEGREES">94.643103611</Longitude>
+      <Elevation unit="METERS">251.86</Elevation>
+      <Site>
+        <Name>Project station 230000106</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928774444</Latitude>
+        <Longitude unit="DEGREES">94.643103611</Longitude>
+        <Elevation unit="METERS">251.21</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928774444</Latitude>
+        <Longitude unit="DEGREES">94.643103611</Longitude>
+        <Elevation unit="METERS">251.21</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928774444</Latitude>
+        <Longitude unit="DEGREES">94.643103611</Longitude>
+        <Elevation unit="METERS">251.21</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000107" code="00107" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000107</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000107. SEED station code truncated to 00107.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.928896667</Latitude>
+      <Longitude unit="DEGREES">94.638730556</Longitude>
+      <Elevation unit="METERS">248.24</Elevation>
+      <Site>
+        <Name>Project station 230000107</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928896667</Latitude>
+        <Longitude unit="DEGREES">94.638730556</Longitude>
+        <Elevation unit="METERS">247.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928896667</Latitude>
+        <Longitude unit="DEGREES">94.638730556</Longitude>
+        <Elevation unit="METERS">247.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.928896667</Latitude>
+        <Longitude unit="DEGREES">94.638730556</Longitude>
+        <Elevation unit="METERS">247.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000108" code="00108" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000108</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000108. SEED station code truncated to 00108.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.931748056</Latitude>
+      <Longitude unit="DEGREES">94.636524167</Longitude>
+      <Elevation unit="METERS">327.14</Elevation>
+      <Site>
+        <Name>Project station 230000108</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931748056</Latitude>
+        <Longitude unit="DEGREES">94.636524167</Longitude>
+        <Elevation unit="METERS">326.49</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931748056</Latitude>
+        <Longitude unit="DEGREES">94.636524167</Longitude>
+        <Elevation unit="METERS">326.49</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931748056</Latitude>
+        <Longitude unit="DEGREES">94.636524167</Longitude>
+        <Elevation unit="METERS">326.49</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000109" code="00109" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000109</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000109. SEED station code truncated to 00109.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.931132778</Latitude>
+      <Longitude unit="DEGREES">94.639325</Longitude>
+      <Elevation unit="METERS">308.50</Elevation>
+      <Site>
+        <Name>Project station 230000109</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931132778</Latitude>
+        <Longitude unit="DEGREES">94.639325</Longitude>
+        <Elevation unit="METERS">307.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931132778</Latitude>
+        <Longitude unit="DEGREES">94.639325</Longitude>
+        <Elevation unit="METERS">307.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931132778</Latitude>
+        <Longitude unit="DEGREES">94.639325</Longitude>
+        <Elevation unit="METERS">307.85</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000110" code="00110" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000110</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000110. SEED station code truncated to 00110.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.918386944</Latitude>
+      <Longitude unit="DEGREES">94.66006</Longitude>
+      <Elevation unit="METERS">387.24</Elevation>
+      <Site>
+        <Name>Project station 230000110</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918386944</Latitude>
+        <Longitude unit="DEGREES">94.66006</Longitude>
+        <Elevation unit="METERS">386.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918386944</Latitude>
+        <Longitude unit="DEGREES">94.66006</Longitude>
+        <Elevation unit="METERS">386.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.918386944</Latitude>
+        <Longitude unit="DEGREES">94.66006</Longitude>
+        <Elevation unit="METERS">386.59</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000111" code="00111" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000111</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000111. SEED station code truncated to 00111.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.931595833</Latitude>
+      <Longitude unit="DEGREES">94.640986389</Longitude>
+      <Elevation unit="METERS">329.12</Elevation>
+      <Site>
+        <Name>Project station 230000111</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931595833</Latitude>
+        <Longitude unit="DEGREES">94.640986389</Longitude>
+        <Elevation unit="METERS">328.47</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931595833</Latitude>
+        <Longitude unit="DEGREES">94.640986389</Longitude>
+        <Elevation unit="METERS">328.47</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.931595833</Latitude>
+        <Longitude unit="DEGREES">94.640986389</Longitude>
+        <Elevation unit="METERS">328.47</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000112" code="00112" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000112</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000112. SEED station code truncated to 00112.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.920337778</Latitude>
+      <Longitude unit="DEGREES">94.664705556</Longitude>
+      <Elevation unit="METERS">328.65</Elevation>
+      <Site>
+        <Name>Project station 230000112</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920337778</Latitude>
+        <Longitude unit="DEGREES">94.664705556</Longitude>
+        <Elevation unit="METERS">328.00</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920337778</Latitude>
+        <Longitude unit="DEGREES">94.664705556</Longitude>
+        <Elevation unit="METERS">328.00</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.920337778</Latitude>
+        <Longitude unit="DEGREES">94.664705556</Longitude>
+        <Elevation unit="METERS">328.00</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000113" code="00113" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000113</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000113. SEED station code truncated to 00113.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.9311175</Latitude>
+      <Longitude unit="DEGREES">94.634362222</Longitude>
+      <Elevation unit="METERS">309.52</Elevation>
+      <Site>
+        <Name>Project station 230000113</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9311175</Latitude>
+        <Longitude unit="DEGREES">94.634362222</Longitude>
+        <Elevation unit="METERS">308.87</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9311175</Latitude>
+        <Longitude unit="DEGREES">94.634362222</Longitude>
+        <Elevation unit="METERS">308.87</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.9311175</Latitude>
+        <Longitude unit="DEGREES">94.634362222</Longitude>
+        <Elevation unit="METERS">308.87</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000114" code="00114" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000114</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000114. SEED station code truncated to 00114.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.930743056</Latitude>
+      <Longitude unit="DEGREES">94.628246944</Longitude>
+      <Elevation unit="METERS">309.89</Elevation>
+      <Site>
+        <Name>Project station 230000114</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930743056</Latitude>
+        <Longitude unit="DEGREES">94.628246944</Longitude>
+        <Elevation unit="METERS">309.24</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930743056</Latitude>
+        <Longitude unit="DEGREES">94.628246944</Longitude>
+        <Elevation unit="METERS">309.24</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930743056</Latitude>
+        <Longitude unit="DEGREES">94.628246944</Longitude>
+        <Elevation unit="METERS">309.24</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+    <Station alternateCode="230000115" code="00115" endDate="2025-06-02T00:00:00.000000Z" startDate="2025-06-01T00:00:00.000000Z">
+      <Identifier type="project-sensor-id">230000115</Identifier>
+      <Comment>
+        <Value>Full project sensor ID 230000115. SEED station code truncated to 00115.</Value>
+      </Comment>
+      <Latitude unit="DEGREES">43.930958056</Latitude>
+      <Longitude unit="DEGREES">94.6433225</Longitude>
+      <Elevation unit="METERS">309.30</Elevation>
+      <Site>
+        <Name>Project station 230000115</Name>
+      </Site>
+      <Channel code="DHE" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930958056</Latitude>
+        <Longitude unit="DEGREES">94.6433225</Longitude>
+        <Elevation unit="METERS">308.65</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">90</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHN" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930958056</Latitude>
+        <Longitude unit="DEGREES">94.6433225</Longitude>
+        <Elevation unit="METERS">308.65</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">0</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+      <Channel code="DHZ" endDate="2025-06-02T00:00:00.000000Z" locationCode="" startDate="2025-06-01T00:00:00.000000Z">
+        <Latitude unit="DEGREES">43.930958056</Latitude>
+        <Longitude unit="DEGREES">94.6433225</Longitude>
+        <Elevation unit="METERS">308.65</Elevation>
+        <Depth unit="METERS">0.65</Depth>
+        <Azimuth unit="DEGREES">0</Azimuth>
+        <Dip unit="DEGREES">-90</Dip>
+        <SampleRate>250</SampleRate>
+        <Sensor>
+          <Type>Moving-coil geophone</Type>
+          <Description>External DT-SOLO 5 Hz three-component geophone; nominal open-circuit generator constant 80 V/(m/s) (+/-5%).</Description>
+          <Manufacturer>DT-SOLO</Manufacturer>
+          <Model>5 Hz 3C</Model>
+        </Sensor>
+        <DataLogger>
+          <Type>Digitizer / recorder</Type>
+          <Description>SmartSolo IMU-3C recorder; field preamplifier gain 0 dB; sampling 250 Hz. No calibrated counts/V response is released.</Description>
+          <Manufacturer>SmartSolo</Manufacturer>
+          <Model>IMU-3C</Model>
+        </DataLogger>
+        <Response/>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

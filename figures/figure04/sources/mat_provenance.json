@@ -1,0 +1,40 @@
+{
+  "mat_sha256": "8868eea7276d907a0f84b2b3bda9d2ae8459bebbd94bf9dc00aaefbcbcd3454c",
+  "candidates": {
+    "quake_10s.mat": {
+      "shape": [
+        239,
+        2500,
+        6
+      ],
+      "mean_waveform_correlations_by_channel": [
+        0.5243416132059752,
+        0.9999999956150973,
+        -0.22846986527692856,
+        -0.01239823977059271,
+        -0.11430679165650594,
+        -0.13520629421193275
+      ],
+      "sha256": "8868eea7276d907a0f84b2b3bda9d2ae8459bebbd94bf9dc00aaefbcbcd3454c"
+    },
+    "seism_10s.mat": {
+      "shape": [
+        407,
+        2500,
+        6
+      ],
+      "mean_waveform_correlations_by_channel": [
+        0.02546730963435493,
+        -0.0026303856604838745,
+        -0.0057702111759677386,
+        0.02017384341304213,
+        -0.01084614072359706,
+        -0.030481662431923698
+      ],
+      "sha256": "e4f03d38b4b0be52cc5ee4c10f75a3b02afe042108a2a301b75f5f356464ae78"
+    }
+  },
+  "sample_rate_basis": "2500 samples in a 10 s window; original example PDF labels 250 Hz",
+  "amplitude_unit": "No unit stored in MAT.",
+  "channel_orientation": "Not stored in MAT."
+}

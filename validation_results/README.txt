@@ -18,18 +18,18 @@ five_class/, four_class/       Run configuration, model checkpoints
                                The ensemble is the mean of all five models
                                (five classes) or of CNN and Random Forest (four
                                classes).
-localization/                  Results of the localization example
-                               (localization_summary.json, Figure 5c/d panels).
 
 Paths in run_config.json and dataset_fingerprint.json are relative to the
-code-dataset directory and the dataset location used in README.txt.
+code-dataset directory and the dataset location used in README_workflows.md.
 
 To keep every file below 100 MB, the following regenerable intermediate files
-are not included: spectrograms.npy, features.npy, features_finetuned.npy,
+are not included: spectrograms.npy, features.npy, five_class/features_finetuned.npy,
 features_imagenet.npy and the two ImageNet-comparison models
 ablation_finetuned.joblib and ablation_imagenet_frozen.joblib. Their
 predictions and metrics (ablation_*_proba.npy, ablation_*_metrics.json,
 imagenet_vs_finetuned_comparison.csv) are included. Running
-07_classification/train_classification.py with the commands in README.txt and
-this split manifest regenerates the omitted files; 08_validation/validate_results.py
+05_classification/train_classification.py with the commands in README_workflows.md and
+this split manifest regenerates the omitted files; 06_validation/validate_results.py
 requires them.
+
+The archived four_class/features_finetuned.npy is included for recomputing the 4,000-point Figure 7d projection and descriptive feature statistics. Row-level CSV path columns use paths relative to the classified waveform directory.

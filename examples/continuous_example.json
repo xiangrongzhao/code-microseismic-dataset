@@ -1,0 +1,23 @@
+[
+  {
+    "raw_file": "230000082.20250601.110006000.DHZ.miniseed",
+    "raw_sha256": "d91f06e50b5cdc7bb4656a97a0c580ec02a6ffe7f789f8dcde04b87f5c26dfae",
+    "expected_file": "sensor_230000082_20250601T110438.872000_20250601T110439.292000.npy",
+    "archive_event_id": "TRANSPORT_VEHICLES-247eb294d56cc1e0",
+    "reviewed_class": "transport_vehicles"
+  },
+  {
+    "raw_file": "230000087.20250601.110006000.DHZ.miniseed",
+    "raw_sha256": "61cc1209e322f5cf3089780073bada264bc0130d2cfaacb88b1edc6e20b1ce5f",
+    "expected_file": "sensor_230000087_20250601T110439.056000_20250601T110439.436000.npy",
+    "archive_event_id": "TRANSPORT_VEHICLES-247eb294d56cc1e0",
+    "reviewed_class": "transport_vehicles"
+  },
+  {
+    "raw_file": "230000104.20250601.110006000.DHZ.miniseed",
+    "raw_sha256": "3cafe40ee6d8d452c2d3d0e310ae80bbf89af9548c814f84783098fe1598fbd6",
+    "expected_file": "sensor_230000104_20250601T110438.708000_20250601T110440.452000.npy",
+    "archive_event_id": "TRANSPORT_VEHICLES-247eb294d56cc1e0",
+    "reviewed_class": "transport_vehicles"
+  }
+]

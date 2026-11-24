@@ -1,0 +1,218 @@
+{
+  "notes": "Exact, complete matches of same-label saved station traces to the 1 June rerun. Only recorded waveform IDs are used.",
+  "groups": [
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T023615_272000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000082_20250601T023616.072000_20250601T023616.832000",
+        "transport_vehicles/sensor_230000086_20250601T023615.292000_20250601T023616.076000",
+        "transport_vehicles/sensor_230000104_20250601T023615.272000_20250601T023616.280000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T054258_956000",
+      "event_label": "microseismic",
+      "record_ids": [
+        "microseismic/sensor_230000081_20250601T054258.956000_20250601T054300.388000",
+        "microseismic/sensor_230000085_20250601T054259.488000_20250601T054301.044000",
+        "microseismic/sensor_230000086_20250601T054259.404000_20250601T054300.692000",
+        "microseismic/sensor_230000087_20250601T054259.016000_20250601T054300.004000",
+        "microseismic/sensor_230000112_20250601T054259.984000_20250601T054300.880000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T060634_800000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000087_20250601T060635.112000_20250601T060635.640000",
+        "mechanical_mining/sensor_230000096_20250601T060634.884000_20250601T060635.764000",
+        "mechanical_mining/sensor_230000110_20250601T060634.800000_20250601T060635.332000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T064213_308000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000096_20250601T064213.732000_20250601T064214.188000",
+        "mechanical_mining/sensor_230000100_20250601T064213.576000_20250601T064213.996000",
+        "mechanical_mining/sensor_230000110_20250601T064213.308000_20250601T064213.892000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T110438_708000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000082_20250601T110438.872000_20250601T110439.292000",
+        "transport_vehicles/sensor_230000087_20250601T110439.056000_20250601T110439.436000",
+        "transport_vehicles/sensor_230000104_20250601T110438.708000_20250601T110440.452000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T111538_724000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000082_20250601T111539.656000_20250601T111539.976000",
+        "mechanical_mining/sensor_230000087_20250601T111539.536000_20250601T111541.004000",
+        "mechanical_mining/sensor_230000093_20250601T111538.724000_20250601T111539.808000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T155303_520000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000081_20250601T155304.036000_20250601T155304.728000",
+        "transport_vehicles/sensor_230000104_20250601T155303.520000_20250601T155304.588000",
+        "transport_vehicles/sensor_230000112_20250601T155303.592000_20250601T155304.100000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T171901_216000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000087_20250601T171901.456000_20250601T171901.844000",
+        "transport_vehicles/sensor_230000106_20250601T171901.216000_20250601T171902.040000",
+        "transport_vehicles/sensor_230000107_20250601T171901.832000_20250601T171902.696000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T183439_136000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000086_20250601T183439.264000_20250601T183439.992000",
+        "transport_vehicles/sensor_230000087_20250601T183439.136000_20250601T183439.964000",
+        "transport_vehicles/sensor_230000104_20250601T183439.416000_20250601T183440.224000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T184127_132000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000090_20250601T184127.524000_20250601T184128.052000",
+        "transport_vehicles/sensor_230000102_20250601T184127.412000_20250601T184128.012000",
+        "transport_vehicles/sensor_230000111_20250601T184127.132000_20250601T184127.892000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T202402_840000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000085_20250601T202403.252000_20250601T202404.080000",
+        "transport_vehicles/sensor_230000086_20250601T202402.840000_20250601T202403.448000",
+        "transport_vehicles/sensor_230000099_20250601T202403.036000_20250601T202403.648000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T211454_288000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000082_20250601T211454.288000_20250601T211454.856000",
+        "transport_vehicles/sensor_230000092_20250601T211454.388000_20250601T211455.580000",
+        "transport_vehicles/sensor_230000104_20250601T211454.600000_20250601T211455.940000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T213130_180000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000096_20250601T213130.180000_20250601T213131.192000",
+        "transport_vehicles/sensor_230000100_20250601T213130.712000_20250601T213131.148000",
+        "transport_vehicles/sensor_230000114_20250601T213130.976000_20250601T213131.412000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T214425_312000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000094_20250601T214425.540000_20250601T214426.260000",
+        "transport_vehicles/sensor_230000106_20250601T214425.880000_20250601T214426.696000",
+        "transport_vehicles/sensor_230000107_20250601T214425.312000_20250601T214426.424000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T230026_836000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000092_20250601T230027.348000_20250601T230028.280000",
+        "mechanical_mining/sensor_230000094_20250601T230026.836000_20250601T230027.528000",
+        "mechanical_mining/sensor_230000105_20250601T230027.456000_20250601T230027.948000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T230043",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000082_20250601T230043.344000_20250601T230043.948000",
+        "mechanical_mining/sensor_230000092_20250601T230043.000000_20250601T230043.800000",
+        "mechanical_mining/sensor_230000104_20250601T230043.064000_20250601T230043.932000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T230127_352000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000081_20250601T230127.848000_20250601T230128.572000",
+        "mechanical_mining/sensor_230000092_20250601T230127.920000_20250601T230128.640000",
+        "mechanical_mining/sensor_230000104_20250601T230127.900000_20250601T230128.900000",
+        "mechanical_mining/sensor_230000112_20250601T230127.352000_20250601T230128.540000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T230528_780000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000084_20250601T230528.780000_20250601T230529.800000",
+        "transport_vehicles/sensor_230000102_20250601T230529.448000_20250601T230530.136000",
+        "transport_vehicles/sensor_230000111_20250601T230529.084000_20250601T230529.636000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T231705_388000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000084_20250601T231705.388000_20250601T231706.000000",
+        "transport_vehicles/sensor_230000103_20250601T231705.896000_20250601T231706.476000",
+        "transport_vehicles/sensor_230000105_20250601T231705.940000_20250601T231706.704000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T231736_136000",
+      "event_label": "mechanical_mining",
+      "record_ids": [
+        "mechanical_mining/sensor_230000085_20250601T231736.484000_20250601T231737.616000",
+        "mechanical_mining/sensor_230000092_20250601T231736.136000_20250601T231736.872000",
+        "mechanical_mining/sensor_230000104_20250601T231736.176000_20250601T231736.980000"
+      ]
+    },
+    {
+      "source": "one_day_rerun",
+      "source_group": "overlap_group_20250601T232138_700000",
+      "event_label": "transport_vehicles",
+      "record_ids": [
+        "transport_vehicles/sensor_230000084_20250601T232138.700000_20250601T232139.484000",
+        "transport_vehicles/sensor_230000103_20250601T232139.352000_20250601T232139.696000",
+        "transport_vehicles/sensor_230000111_20250601T232139.000000_20250601T232140.036000"
+      ]
+    }
+  ]
+}

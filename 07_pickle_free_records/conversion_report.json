@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-06T13:03:51.378709+00:00",
+  "source_directory": "classified event-level waveform data",
+  "destination_directory": "classified event-level waveform data (npz)",
+  "source_npy_records": 17622,
+  "npz_records": 17622,
+  "index_rows": 17622,
+  "npz_reopened_with_allow_pickle_false": 17622,
+  "records_compared_exactly_in_all_six_fields": 17622,
+  "field_comparisons_passed": 105732,
+  "source_npy_bytes": 713563809,
+  "npz_bytes": 483159892,
+  "classes": {
+    "blasting": 6512,
+    "mechanical_mining": 7690,
+    "microseismic": 1401,
+    "small_landslide": 148,
+    "transport_vehicles": 1871
+  },
+  "numpy_version": "2.3.5",
+  "records_index_sha256": "b950061152b75c213352034e97c544f029aad136bd1e589c32d857dabcafd672",
+  "conversion": "Lossless field serialization only; no filtering, resampling, amplitude scaling or relabelling.",
+  "npy_path_root": "Original dataset root supplied to --dataset-root",
+  "npz_path_root": "Directory containing records_index.csv"
+}

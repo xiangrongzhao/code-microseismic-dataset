@@ -6,7 +6,6 @@
 - Preprocess raw miniSEED waveforms with band-pass filtering and quality screening.
 - Detect candidate events with STA/LTA and extract approximately 10-second event windows.
 - Export candidate waveforms and label templates for manual annotation.
-- Pick P-wave arrivals and reproduce a seven-station source-localization example using FMM and Levenberg-Marquardt (L-M).
 - Train and evaluate five baseline classifiers on 17,622 labelled waveform records: CNN, Random Forest, Logistic Regression, MLP, and XGBoost. Both five-class and four-class tasks are supported.
 - Run checks for data integrity, recording coverage, classification metrics, and saved predictions.
 
@@ -92,24 +91,16 @@ python 07_classification/train_classification.py --data-root "../dataset/classif
 
 The supplied archive produces 11,437 training, 4,165 validation, and 2,020 test records. Both tasks use the same file assignments. Date separation is applied within each original class. See [RUN_EXPERIMENTS.txt](07_classification/RUN_EXPERIMENTS.txt) for evaluation and figure commands.
 
-The localization example is a self-contained directory with its seven waveforms, station table, velocity model (`XJD2_updated.txt`), the pick set `code_inputs1` (`stas_xyz.npy`, `tobs_p.npy`, `pick_report.csv`, `input_provenance.json`) and the reference outputs in `localization_outputs` (`localization_summary.json`, `example_catalogue.csv`, Figure 5c/d panels). Rebuild the picks from the bundled waveforms, reproduce both solutions and run the inversion checks:
 
 ```shell
-python -m pip install -r 05_velocity_localization/requirements.txt
-python 05_velocity_localization/make_inputs1.py
-python 05_velocity_localization/run_localization_example.py
-python 05_velocity_localization/test_loc_xjd2.py
 ```
 
-`make_inputs1.py` rewrites `code_inputs1` and `run_localization_example.py` rewrites `localization_outputs`; rerunning them reproduces the released files.
 
-See [the localization guide](05_velocity_localization/README.txt) for expected values and verification.
 
 Parameter files for every processing stage are in `parameters/` (one JSON file per stage, from raw-data screening to classification).
 
 ## Validation
 
-The `validation_results` directory contains the split manifest, model checkpoints, predictions and metric files that reproduce the tables and figures of the Technical Validation section, together with the localization-example results. See `validation_results/README.txt` for its contents and for the regenerable intermediate files that are not included.
 
 Check the event files, recording coverage, and saved results:
 
@@ -127,8 +118,6 @@ code-microseismic-dataset/
 |-- 01_preprocessing/           # Raw-waveform filtering and quality screening
 |-- 02_event_detection/         # STA/LTA detection and event-window extraction
 |-- 03_manual_annotation/       # Candidate review and annotation templates
-|-- 04_arrival_picking/         # General P-wave arrival picking
-|-- 05_velocity_localization/   # Velocity model, code_inputs1 and localization example
 |-- 06_data_loading/            # NumPy event loading and schema checks
 |-- 07_classification/          # Baseline training and evaluation
 |-- 08_validation/              # Integrity, coverage, metrics, and figures
@@ -149,10 +138,8 @@ code-microseismic-dataset/
 | Preprocessing | Filtered `.npz` waveforms and `preprocessing.json` |
 | Detection and review | Candidate `.npy` records, `detection_summary.json`, and `annotation_template.json` |
 | Classification | Split assignments, model checkpoints, predictions, `multimodel_metrics.csv`, and `summary.json` |
-| Localization | Rebuilt arrival arrays, `pick_report.csv`, `localization_summary.json`, `example_catalogue.csv`, and Figure 5c/d panels |
 | Validation | Integrity reports, coverage tables, and recalculated classification metrics |
 
-Classification reports include accuracy, balanced accuracy, macro-F1, per-class scores, and confusion matrices. Use a fresh classification output directory when changing the data, split, or settings. In the localization example, the released-model L-M iteration stops when damping becomes too large; its reproducible result does not demonstrate convergence or independently measured location accuracy.
 
 ## License and citation
 
